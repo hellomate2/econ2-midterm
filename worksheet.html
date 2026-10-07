@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECON 2 Midterm Worksheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&text=%E2%88%92%E2%89%88&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Sans+Condensed:wght@500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Matches the companion cheat sheet: Fira Sans family, same ink, rules, blue and gold.
+   The minus and approx glyphs come from Fira Mono (Fira Sans draws the minus hyphen-short). */
+:root{--paper:#ffffff;--ink:#121821;--mute:#5b6474;--rule:#c9d0da;--rule2:#7d8796;--blue:#155a96;--gold:#d79b00;--goldbg:#fff6da;
+--keybg:#eef1f5;--box:#ffffff;--work:#fbfcfd;
+--body:"Fira Mono","Fira Sans","Helvetica Neue",Arial,sans-serif;--display:"Fira Mono","Fira Sans Condensed","Arial Narrow",sans-serif;--mono:"Fira Code","Fira Mono",Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#11151c;--ink:#e6e9ef;--mute:#9ea7b5;--rule:#333b48;--rule2:#6b7585;--blue:#7cbcea;--gold:#e0b030;--goldbg:#2a2614;--keybg:#1b212b;--box:#161b23;--work:#141920;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#11151c;--ink:#e6e9ef;--mute:#9ea7b5;--rule:#333b48;--rule2:#6b7585;--blue:#7cbcea;--gold:#e0b030;--goldbg:#2a2614;--keybg:#1b212b;--box:#161b23;--work:#141920;color-scheme:dark}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.55;margin:0;padding-inline:16px;padding-block:28px 72px;font-kerning:normal}
+main{max-width:740px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0;font-weight:600}
+h1{font-size:34px;color:var(--ink);letter-spacing:-.01em;margin-top:4px}
+h2{font-size:24px;color:var(--blue);margin-top:48px;padding-top:12px;border-top:2px solid var(--blue)}
+h3{font-size:18.5px;margin-top:30px;color:var(--ink)}
+h4{font-family:var(--display);font-size:16px;font-weight:600;margin:18px 0 0;color:var(--blue)}
+p{margin:10px 0}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:12.5px;color:var(--mute);font-weight:500;margin:0}
+.lede{color:var(--mute);margin-top:10px;font-size:17px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+nav.toc a{font-family:var(--display);font-size:14px;color:var(--blue);text-decoration:none;border:1px solid var(--rule);padding:4px 12px;border-radius:999px}
+nav.toc a:hover{border-color:var(--blue)}
+.rules{border:1px solid var(--rule);border-left:4px solid var(--gold);background:var(--box);padding:12px 18px;font-size:15px;margin-top:14px}
+.rules ol{margin:6px 0 0;padding-left:20px}
+.q{margin-top:20px}
+.qhead{font-family:var(--display);font-weight:600}
+.pts{font-family:var(--display);color:var(--mute);font-weight:500}
+.ans{border:1.5px solid var(--ink);background:var(--box);margin-top:8px;border-radius:2px}
+.fig{background:#fff;border:1px solid var(--rule);padding:6px;margin-top:10px;max-width:440px;border-radius:2px}
+.fig svg{display:block;width:100%;height:auto}
+.setup{border-left:3px solid var(--gold);background:var(--goldbg);padding:8px 14px;margin-top:12px}
+.key{background:var(--keybg);padding:12px 16px 12px;margin-top:12px;border-radius:4px;border-left:3px solid var(--blue)}
+.key p{margin:6px 0}
+.key ol{margin:6px 0;padding-left:22px}
+.key li{margin:4px 0}
+.key .tag{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--blue);display:block}
+.calc{display:block;font-family:var(--mono);font-variant-ligatures:none;font-size:14px;line-height:1.55;white-space:pre-wrap;background:var(--box);border:1px solid var(--rule);padding:8px 12px;margin:8px 0;border-radius:2px}
+.grade{border-top:1px dashed var(--rule2);margin-top:10px;padding-top:6px;font-size:14.5px;color:var(--mute)}
+.grade::before{content:"Grading  ";font-family:var(--display);font-weight:600;color:var(--ink);letter-spacing:.02em}
+table{border-collapse:collapse;font-size:15px;margin-top:10px}
+th,td{border:1px solid var(--rule);padding:6px 10px;text-align:left;font-variant-numeric:tabular-nums;vertical-align:top}
+th{font-family:var(--display);font-weight:600;font-size:14px;background:var(--keybg);border-bottom-color:var(--rule2)}
+.blank td{height:34px;min-width:150px}
+.blank td:first-child{min-width:0}
+.tw{overflow-x:auto}
+.plan li{margin:6px 0}
+.small{font-size:14.5px;color:var(--mute)}
+ol.parts{list-style:none;padding:0;margin:10px 0 0}
+.drill{counter-reset:part}
+.keep{break-inside:avoid}
+ol.parts>li{counter-increment:part;position:relative;padding-left:30px;margin:12px 0 0}
+ol.parts>li::before{content:"(" counter(part,lower-alpha) ")";position:absolute;left:0;top:0;font-family:var(--display);font-weight:600;color:var(--blue)}
+ol.parts.num>li::before{content:counter(part) "."}
+.work{border:1px dashed var(--rule2);background:var(--work);margin-top:6px;border-radius:2px}
+.drill{margin-top:34px;counter-reset:part}
+.drill h3{margin-top:0}
+@media (max-width:520px){body{font-size:16px}h1{font-size:28px}h2{font-size:21px}.calc{font-size:12.5px;padding:8px}ol.parts>li{padding-left:28px}}
+@media print{
+ body{background:#fff;color:#111;font-size:11.5px;line-height:1.45;padding:0}
+ main{max-width:none}
+ h1{font-size:26px}h2{font-size:19px;margin-top:0;break-before:page}h3{font-size:14.5px;margin-top:20px}
+ #plan{break-before:auto;margin-top:26px}
+ .lede{font-size:12.5px}.eyebrow{font-size:10px}
+ .key{background:#f1f4f8;padding:9px 12px}
+ .q,.key,.fig,.drill h3,ol.parts>li,table{break-inside:avoid}
+ h3,h4{break-after:avoid}
+ nav.toc{display:none}
+ .ans{border-color:#111}
+ .calc{font-size:10px;line-height:1.5;padding:6px 9px}
+ .grade,.rules,table,.small,.key .tag{font-size:10.5px}
+ th{font-size:10px}
+ .fig{max-width:330px}
+ .plan li{margin:2px 0}ul.plan,ol.plan{margin:4px 0;padding-left:20px}.gp{font-size:10.8px;line-height:1.4}.gp h3{margin-top:12px;font-size:13.5px}.gp p{margin:5px 0}
+ .setup{background:#fff8e3}
+ -webkit-print-color-adjust:exact;print-color-adjust:exact}
+@page{size:letter;margin:.6in}
+</style>
+<style>@media print{.backlink{display:none}}</style>
+</head>
+<body>
+<p class="backlink" style="max-width:8in;margin:0 auto 10px;font:600 14px Fira Sans Condensed,Arial,sans-serif"><a href="./" style="color:inherit">&larr; ECON 2 Midterm Kit</a></p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<main>
+<p class="eyebrow">ECON 2 · Professor Edwards · Midterm Thursday, October 8, 9:40 am · Dwinelle 155</p>
+<h1>Midterm Worksheet</h1>
+<p class="lede">A full practice midterm in Edwards' format (his Fall 2025 structure, with a shorter monopoly question as he promised), then drills on the Problem Set 1, Problem Set 2, and slide templates the practice midterm does not cover. Step-by-step answer keys follow each part. Do the real Fall 2025 midterm first, then Part 1, both timed and on paper.</p>
+<nav class="toc"><a href="#plan">Game plan</a><a href="#mock">Part 1: Practice midterm</a><a href="#mockkey">Part 1 key</a><a href="#drills">Part 2: Drills</a><a href="#drillkey">Part 2 key</a></nav>
+<section class="gp"><h2 id="plan">Game plan</h2>
+<h3>What the exam looks like</h3>
+<p>Last year's midterm (Fall 2025) was 60 points in 60 minutes with no multiple choice: 2 free points, eight 2-point short answers, one long market story (24 points), and one long monopoly story (18 points). Three graphs were worth 4 points each. This year Edwards said on the class 11 slides that monopoly "will be on the midterm" as "a shorter question than the F25 Q3 about monopolist Taylor Swift," that topics covered more in class get more weight, and that the class 9 material on average cost curves and how profits evolve is "not what you should study." Externalities were drilled with numbers on Problem Set 2, question 3, so expect them.</p>
+<h3>How he grades (from the Fall 2025 key)</h3>
+<ul class="plan">
+<li>Answers go inside the box. "Don't fill the space with words. Less is more." Two to four sentences with the right vocabulary (marginal benefit, marginal cost, opportunity cost, willingness to pay) beat a paragraph.</li>
+<li>Required phrases get full credit. College cost needed "foregone earnings." Pollution needed "social marginal cost" and "social marginal benefit."</li>
+<li>Graphs: label axes and curves, put the equilibrium at the numbers he gives, draw dotted lines to both axes, and write "values when you know them."</li>
+<li>Elasticity: the class 6 slide defines it in absolute value, but the class 7 slides and the Fall 2025 key keep the minus sign (−0.5). Write both: "−0.5, so |ε| = 0.5 &lt; 1, inelastic."</li>
+<li>Show your arithmetic. He gives partial credit in quarter points (the lowest Fall 2025 score was 11.75).</li>
+</ul>
+<h3>The next 36 hours</h3>
+<ol class="plan">
+<li>Tonight: the real Fall 2025 midterm (Unit 26 of the packet), timed at 60 minutes, with only your one-page cheat sheet, the same rule as Thursday. Do it before you look at anything else here, and grade it with the official key.</li>
+<li>Tomorrow morning: Part 1 below, timed at 60 minutes, again with only your cheat sheet. Grade it with the key. Then redo Problem Set 2, question 3 from a blank page.</li>
+<li>Part 2 drills, only the sections you missed. Every drill has a full worked answer.</li>
+<li>Print the companion cheat sheet (one page, front and back, the size he allows) and add your own notes in the margins. Writing on it is studying.</li>
+<li>Thursday: Cal ID (they check it when you hand in), calculator, ruler, pencil and eraser, and the cheat sheet. The exam starts at 9:40.</li>
+</ol>
+<h3>What he said out loud in lecture (Fall 2026 recordings plus the Fall 2025 monopoly lecture)</h3>
+<ul class="plan">
+<li>The Fall 2025 midterm is the template. Classes 8, 9, and 11: "last year's midterm will be pretty indicative," and look at the problem sets too. Class 1: the midterm will be "a new version of what's in here."</li>
+<li>Guaranteed: standard supply and demand, and elasticity ("Those are gonna be on there"), including the reverse use where a quantity shock tells you the percent change in price (question 1(g) below). He called the flat versus steep shape of demand "really important."</li>
+<li>The monopoly trap he hammered in class 11: get Q from MR = MC, then read the price off demand. In his example Q = 8 and P = 4, "not 2." That is drill D13(a).</li>
+<li>Rational Spending Rule: "for the exam... write this down." The most-missed idea: when a good's price goes up, you buy less of it, and its marginal utility rises.</li>
+<li>"Explain" means explain. A bare number does not get full credit. If you draw a different curve than he did, argue for its shape and you get partial credit. If wording is unclear, write your interpretation and answer it.</li>
+<li>Not on the exam: indifference curves, income and substitution effects, average total cost curves and the profit rectangles drawn with them, the zero-profit monopolist, calculus, and coding. Ostrom only if the exam explains it. Logs: you will not need them from memory; if a question uses them, the exam will explain how.</li>
+<li>Cheat sheet: one page, front and back, typed or handwritten, and you can build it with friends. He told you to put two things on it: "inelastic means steep and elastic means flat," and MU<sub>a</sub>/P<sub>a</sub> = MU<sub>b</sub>/P<sub>b</sub>. He also suggested the monopoly graph.</li>
+<li>True-or-false statements with "always" or "solely" are usually false.</li>
+</ul></section>
+
+<h2 id="mock">Part 1: Practice midterm</h2>
+<p class="eyebrow">ECON 2 Fall 2026 · Practice Midterm Exam · 60 minutes · 60 points</p>
+<div class="rules"><strong>Rules and instructions</strong> (from the Fall 2025 cover page, shortened)
+<ol><li>You have 60 minutes. Stop working when time is called.</li>
+<li>Open-book, open-note; notes limited to 1 page, double-sided. Stand-alone calculators allowed. You might find a ruler useful.</li>
+<li>No internet, phones, laptops, or screens.</li>
+<li>Write legibly. Confine your answers to the space provided (inside the box). Don't fill the space with words. Less is more.</li></ol></div>
+<div class="q"><span class="pts">(1 point)</span> Write your name and student ID at the top of each page of the exam.</div>
+<div class="q"><span class="pts">(1 point)</span> Moffitt or Main Stacks at 2 a.m.? Briefly explain.<div class="ans" style="height:50px"></div></div>
+<div class="keep"><h3>1. (16 points) Marginal questions, marginal answers</h3><div class="q"><span class="qhead">(a)</span> <span class="pts">(2 points)</span> An economy produces consumption goods (horizontal axis) and investment goods (vertical axis). Moving along its PPC from point A to point B adds 10 units of consumption and gives up 30 units of investment. What is the opportunity cost of one unit of consumption along this stretch? Where on the graph is an economy that is in a recession?<div class="ans" style="height:90px"></div></div></div>
+<div class="q"><span class="qhead">(b)</span> <span class="pts">(2 points)</span> Boba near campus goes from $6.00 to $6.60 a cup, and weekly quantity demanded falls from 20,000 to 16,000 cups. Using simple percentage changes from the starting values, what is the price elasticity of demand? Is demand relatively elastic or inelastic? Does total spending on boba rise or fall?<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(c)</span> <span class="pts">(2 points)</span> You buy coffee ($4 each, marginal utility 12) and burritos ($10 each, marginal utility 30). Are you following the Rational Spending Rule? Then the price of coffee rises to $6. How should you change what you buy, and why?<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(d)</span> <span class="pts">(2 points)</span> In one day Oski can write 4 essays or finish 8 problem sets. The Stanford Tree can write 1 essay or finish 4 problem sets. Who has the absolute advantage in each task? If they split the work, who should specialize in essays, and why?<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(e)</span> <span class="pts">(2 points)</span> You win a free ticket to a Warriors game. You could resell it for $150. The game plus the BART ride takes 4 hours (ignore the fare), and you could otherwise spend those hours working your campus job at $20 an hour. What is your opportunity cost of going? Be specific.<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(f)</span> <span class="pts">(2 points)</span> The city caps rents below the market-clearing level. Does the demand curve or the supply curve shift? What happens to the number of apartments actually rented? On a graph, how would you measure the shortage? (Be careful.)<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(g)</span> <span class="pts">(2 points)</span> The price elasticity of demand for gasoline in California is about −0.4. A refinery fire cuts the quantity of gas sold by 2%. By about how much does the price of gas rise? Does total spending on gas rise or fall? Show your work.<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(h)</span> <span class="pts">(2 points)</span> A small almond farm sells at the market price of $5 per pound. Its marginal cost is MC = q/2, where q is thousands of pounds per year, and its fixed costs are $20,000 a year. How much should it grow, and why? Should it enter the market?<div class="ans" style="height:100px"></div></div>
+<div class="keep"><h3>2. (24 points) Grounds for concern</h3>
+<div class="setup">Coffee beans are grown in a handful of tropical countries and shipped around the world. A newly planted coffee tree takes several years before it produces beans. For this question, suppose the U.S. market for coffee beans starts at about $4 per pound and about 3 billion pounds per year.</div><div class="q"><span class="qhead">(a)</span> <span class="pts">(2 points)</span> What is the likely shape of the demand curve for coffee beans in the short run: horizontal, vertical, or somewhere in between? Briefly explain.<div class="ans" style="height:90px"></div></div></div>
+<div class="q"><span class="qhead">(b)</span> <span class="pts">(2 points)</span> What is the likely shape of the supply curve in the short run? How about over 5 to 10 years? Briefly explain.<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(c)</span> <span class="pts">(4 points)</span> Draw short-run supply and demand in the U.S. coffee bean market. Put the starting equilibrium at $4 per pound and 3 billion pounds, and make the slopes match your answers to (a) and (b). Do not worry about other specifics.<div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Coffee beans (billions of pounds per year)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per pound)</text>
+</svg></div></div>
+<div class="q"><span class="qhead">(d)</span> <span class="pts">(2 points)</span> Suppose coffee bean prices jump twice in five years, each time right after a drought in Brazil, while the number of coffee drinkers grows slowly and steadily. Is this more likely a supply shock or a demand shock, and which way does the curve move? When the price rises, does the demand curve shift?<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(e)</span> <span class="pts">(4 points)</span> Suppose that after the second drought the price is $8 per pound and quantity is 2.5 billion pounds. Redraw supply and demand and depict the drought, with values when you know them.<div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Coffee beans (billions of pounds per year)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per pound)</text>
+</svg></div></div>
+<div class="q"><span class="qhead">(f)</span> <span class="pts">(4 points)</span> Using the numbers in (e), compute the price elasticity of demand (simple percentage changes from the starting values). Did total spending on coffee beans rise or fall, and by how much? Why? Show your work.<div class="ans" style="height:120px"></div></div>
+<div class="q"><span class="qhead">(g)</span> <span class="pts">(2 points)</span> A neighborhood coffee shop keeps selling bags of beans at its old price but posts a sign: "Limit one bag per customer." What does the basic competitive model predict will happen on its shelves? Why might the shop do this anyway?<div class="ans" style="height:90px"></div></div>
+<div class="q"><span class="qhead">(h)</span> <span class="pts">(4 points)</span> Congress adds a $1 per pound tax on coffee beans, collected from importers. In the long run, supply is far more elastic than demand. Who bears most of the tax? Does it matter that importers write the check? Will the deadweight loss be large or small? Briefly explain.<div class="ans" style="height:110px"></div></div>
+<div class="keep"><h3>3. (10 points) Patently obvious</h3>
+<div class="setup">BioBear holds a patent on Sneezgone, the only drug for a rare allergy. Monthly demand is P = 100 − Q, where P is dollars per dose and Q is thousands of doses. Marginal cost is constant at $20 per dose, and fixed costs are zero.</div><div class="q"><span class="qhead">(a)</span> <span class="pts">(2 points)</span> Why can BioBear charge more than marginal cost? What keeps rivals out?<div class="ans" style="height:70px"></div></div></div>
+<div class="q"><span class="qhead">(b)</span> <span class="pts">(4 points)</span> I have drawn the marginal cost curve for you. Add any curves you need to explain the market equilibrium, and label the monopoly quantity and price with values.<div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">20</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">40</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">60</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">80</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">100</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">20</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">40</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">60</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">80</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">100</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Doses (thousands per month)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per dose)</text>
+<polyline points="46.0,186.8 342.0,186.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="316.0" y="180.8" fill="#b8322a" font-weight="700" text-anchor="start">MC</text>
+</svg></div></div>
+<div class="q"><span class="qhead">(c)</span> <span class="pts">(2 points)</span> What is BioBear's monthly profit, in dollars? What is the deadweight loss? Show your work.<div class="ans" style="height:80px"></div></div>
+<div class="q"><span class="qhead">(d)</span> <span class="pts">(2 points)</span> The patent expires, generic makers enter, and competition drives the price down to marginal cost. What happens to price, quantity, and consumer surplus? Where did BioBear's old profit go?<div class="ans" style="height:80px"></div></div>
+<div class="keep"><h3>4. (8 points) Blowing leaves, blowing smoke</h3>
+<div class="setup">Gas leaf blowers are loud and pollute. In the market for yard cleanups, demand is P = 10 − Q (P in dollars, Q in thousands of cleanups per month), and private marginal cost is constant at $2. Each cleanup imposes $4 of noise and pollution costs on neighbors.</div><div class="q"><span class="qhead">(a)</span> <span class="pts">(4 points)</span> I have drawn the private marginal cost for you. Show the market outcome, the social optimum, and the deadweight loss, with values.<div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">10</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Yard cleanups (thousands per month)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,186.8 342.0,186.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="312.0" y="180.8" fill="#b8322a" font-weight="700" text-anchor="start">PMC</text>
+</svg></div></div></div>
+<div class="q"><span class="qhead">(b)</span> <span class="pts">(2 points)</span> At the market outcome, what are consumer surplus, producer surplus, and the total cost imposed on neighbors?<div class="ans" style="height:70px"></div></div>
+<div class="q"><span class="qhead">(c)</span> <span class="pts">(2 points)</span> What per-unit tax gets the market to the efficient quantity? Some neighbors want gas-blower yard cleanups banned outright, which would take this market to zero. Is zero the efficient quantity here? Briefly explain.<div class="ans" style="height:70px"></div></div>
+<h2 id="mockkey">Part 1 answer key</h2><p class="small">Each answer shows the steps, then what earns full credit. Score yourself honestly: a part is full credit only if your answer has the idea in the grading line.</p>
+<div class="keep"><h3>1. Short answers</h3><div class="key"><span class="tag">1(a)</span><p>Slope of the PPC = −30/10 = −3. The slope of the PPC is minus the opportunity cost of the good on the horizontal axis, so one unit of consumption costs <strong>3 units of investment</strong>.</p><p>A recession is a point <strong>inside</strong> the PPC: the economy is not producing all it is capable of. The curve itself does not shift.</p><div class="grade">Full credit: 3 units of investment, and "inside the PPC." A recession is not an inward shift of the PPC (class 2 slide).</div></div></div>
+<div class="key"><span class="tag">1(b)</span><span class="calc">%ΔP = (6.60 − 6.00) / 6.00 = +10%
+%ΔQ = (16,000 − 20,000) / 20,000 = −20%
+ε = −20% / 10% = −2, so |ε| = 2 > 1: elastic
+Spending before: $6.00 × 20,000 = $120,000
+Spending after:  $6.60 × 16,000 = $105,600 (falls 12%)</span><p>Demand is <strong>elastic</strong>, so quantity falls by a bigger percentage than price rises, and total spending <strong>falls</strong>, from $120,000 to $105,600.</p><div class="grade">Full credit: −2 (or 2 in absolute value), elastic, spending falls.</div></div>
+<div class="key"><span class="tag">1(c)</span><span class="calc">Before: MU<sub>coffee</sub>/P<sub>coffee</sub> = 12/4 = 3   MU<sub>burrito</sub>/P<sub>burrito</sub> = 30/10 = 3
+        Equal, so yes.
+After:  MU<sub>coffee</sub>/P<sub>coffee</sub> = 12/6 = 2, which is less than 3</span><p>Yes, at first the marginal utility per dollar is the same (3 utils per dollar). After the price rise, coffee gives less utility per dollar. <strong>Buy less coffee</strong> (its marginal utility rises as you drink less) and <strong>more burritos</strong> (their marginal utility falls) until the two ratios are equal again.</p><div class="grade">Full credit: say which side of the equation fell and which change in quantities restores equality, using diminishing marginal utility.</div></div>
+<div class="key"><span class="tag">1(d)</span><span class="calc">Opportunity cost of 1 essay:        Oski 8/4 = 2 problem sets   Tree 4/1 = 4 problem sets
+Opportunity cost of 1 problem set:  Oski 1/2 essay              Tree 1/4 essay</span><p>Oski has the absolute advantage in both tasks (4 essays beats 1, and 8 problem sets beats 4). <strong>Oski specializes in essays</strong> because his opportunity cost of an essay (2 problem sets) is lower than the Tree's (4). The Tree does problem sets, where its opportunity cost is lower.</p><div class="grade">Full credit: compares opportunity costs. "Oski is better at everything" alone is the absolute advantage trap.</div></div>
+<div class="key"><span class="tag">1(e)</span><span class="calc">$150 resale value + 4 hours × $20 = $150 + $80 = $230</span><p>The ticket was free to you, but going means giving up the $150 you could sell it for, plus the wages you could earn in those hours.</p><div class="grade">Full credit: $230 with both pieces. Writing $0 or only $80 misses the resale value (Edwards' theater-ticket example).</div></div>
+<div class="key"><span class="tag">1(f)</span><p><strong>Neither curve shifts.</strong> The ceiling holds the price below equilibrium, so we move along both curves. Landlords supply only Q<sub>S</sub>, which is less than the old Q<sub>1</sub>, so fewer apartments are rented. Renters want Q<sub>D</sub>, which is more than Q<sub>1</sub>. On a graph the shortage is the horizontal gap at the ceiling price: <strong>Q<sub>D</sub> − Q<sub>S</sub></strong>. There is deadweight loss between Q<sub>S</sub> and Q<sub>1</sub>, and apartments may go to people who do not value them most (misallocation).</p><div class="grade">Full credit: no shift, quantity rented falls to Q<sub>S</sub>, shortage = Q<sub>D</sub> − Q<sub>S</sub>. This is the Problem Set 1, question 3(c) trap he flagged as "tricky."</div></div>
+<div class="key"><span class="tag">1(g)</span><span class="calc">%ΔP = %ΔQ / ε = −2% / −0.4 = +5%
+Spending: %ΔP + %ΔQ = 5% − 2% = about +3%</span><p>Price rises about <strong>5%</strong>. Demand is inelastic (|ε| = 0.4 &lt; 1), so it takes a big price rise to cut quantity demanded by 2%. Spending <strong>rises</strong>, by about 3%. (Adding the two percent changes is a shortcut that works for small changes like these.)</p><div class="grade">Full credit: about +5% with the division shown, and spending rises.</div></div>
+<div class="key"><span class="tag">1(h)</span><span class="calc">P = MC:  5 = q/2, so q = 10 thousand pounds
+Area between price and MC from 0 to 10 = ½ × 10 × 5 = 25,
+  which is $25,000 (q is in thousands)
+$25,000 > $20,000 fixed cost, so it enters (profit = $5,000)</span><p>The farm is a price taker, so its marginal revenue is the $5 price, and it grows until MC = $5. It enters because revenue minus variable cost (the area between price and MC, its producer surplus) covers the fixed cost.</p><div class="grade">Full credit: 10 thousand pounds from P = MC, and the entry comparison against the $20,000 fixed cost.</div></div>
+<div class="keep"><h3>2. Coffee</h3><div class="key"><span class="tag">2(a)</span><p><strong>Steep (inelastic), close to vertical in the short run.</strong> Coffee is a daily habit with caffeine, and there is no close one-for-one substitute (tea and energy drinks are partial). Willingness to pay for the first cups is very high.</p></div></div>
+<div class="key"><span class="tag">2(b)</span><p><strong>Short run: steep (inelastic).</strong> Farmers can only harvest the trees already in the ground, so producing more means sharply rising marginal cost. <strong>Over 5 to 10 years: much flatter (more elastic)</strong>, because farmers can plant new trees and new regions can start growing.</p></div>
+<div class="key"><span class="tag">2(c)</span><p>Both curves are steep in the short run (see (a) and (b)), with demand the steeper of the two. They cross at <strong>(3 billion pounds, $4)</strong>, with dotted lines to both axes.</p><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Coffee beans (billions of pounds per year)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per pound)</text>
+<polyline points="144.7,14.0 218.7,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="223.7" y="224.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D</text>
+<polyline points="144.7,230.0 292.7,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="298.7" y="26.0" fill="#b8322a" font-weight="700" text-anchor="start">S</text>
+<polyline points="46,158.0 194.0,158.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="158.0" r="3.4" fill="#1d2430"/>
+<text x="203.9" y="170.6" fill="#1d2430" text-anchor="start" font-size="11" font-weight="600">(3, $4)</text>
+</svg></div><div class="grade">Full credit: equilibrium at (3, $4), demand clearly steep, supply upward sloping and steep, axes and curves labeled.</div></div>
+<div class="key"><span class="tag">2(d)</span><p><strong>Supply shock.</strong> The jumps line up with droughts, which destroy part of the harvest, while slow, steady growth in coffee drinkers cannot explain sudden jumps. Supply shifts <strong>left (up)</strong>: at every price, fewer beans are available. The demand curve does <strong>not</strong> shift; the higher price moves buyers along demand to a lower quantity demanded.</p></div>
+<div class="key"><span class="tag">2(e)</span><p>Same demand. Supply shifts up to S' and crosses demand at <strong>(2.5 billion pounds, $8)</strong>. The price jumps a lot and quantity drops a little, because demand is steep.</p><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Coffee beans (billions of pounds per year)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per pound)</text>
+<polyline points="144.7,14.0 218.7,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="223.7" y="224.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D</text>
+<polyline points="144.7,230.0 292.7,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="298.7" y="26.0" fill="#b8322a" font-weight="700" text-anchor="start">S</text>
+<polyline points="70.7,230.0 218.7,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="224.7" y="26.0" fill="#b8322a" font-weight="700" text-anchor="start">S'</text>
+<polyline points="46,158.0 194.0,158.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,86.0 169.3,86.0 169.3,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="158.0" r="3.4" fill="#1d2430"/>
+<circle cx="169.3" cy="86.0" r="3.4" fill="#1d2430"/>
+<text x="203.9" y="170.6" fill="#1d2430" text-anchor="start" font-size="11" font-weight="600">(3, $4)</text>
+<text x="157.0" y="77.0" fill="#1d2430" text-anchor="end" font-size="11" font-weight="600">(2.5, $8)</text>
+</svg></div><div class="grade">Full credit: supply shifts left, demand unchanged, new point labeled (2.5, $8), old point labeled (3, $4).</div></div>
+<div class="key"><span class="tag">2(f)</span><span class="calc">%ΔP = (8 − 4) / 4 = +100%
+%ΔQ = (2.5 − 3) / 3 = −16.7%
+ε = −16.7% / 100% = −0.17, so |ε| < 1: inelastic
+Spending before: $4 × 3 billion   = $12 billion
+Spending after:  $8 × 2.5 billion = $20 billion
+Change: +$8 billion, or +67%</span><p>Spending <strong>rises</strong> because demand is inelastic: the percentage rise in price is much bigger than the percentage drop in quantity. (The shortcut %ΔP + %ΔQ only works for small changes. With a 100% price jump, multiply P × Q directly, as above.)</p><div class="grade">Full credit: ε of about −0.17, inelastic, spending up $8 billion, with the inelastic reason.</div></div>
+<div class="key"><span class="tag">2(g)</span><p>Selling below the market price works like a <strong>price ceiling</strong> on its own shelves: quantity demanded exceeds the beans it has, so there is a <strong>shortage</strong>, and the limit (plus who shows up first) rations the bags instead of willingness to pay. Why do it anyway: customers care about <strong>fairness</strong>, and by not looking like it is price gouging, the shop keeps goodwill and its repeat drink customers.</p><div class="grade">Mirrors the Trader Joe's egg answer in the Fall 2025 key. Full credit for shortage and rationing plus a fairness or goodwill reason.</div></div>
+<div class="key"><span class="tag">2(h)</span><p><strong>Coffee drinkers bear most of it.</strong> The less elastic side of the market bears more of a tax, and the more elastic side avoids it: with very elastic supply, the price importers keep barely falls, so the consumer price rises by nearly the full $1. <strong>It does not matter</strong> who writes the check; a tax collected from either side gives the same equilibrium. Deadweight loss is <strong>small</strong>, because inelastic demand means quantity barely falls.</p><div class="grade">Full credit: consumers, who writes the check does not matter, small DWL with the elasticity reason.</div></div>
+<div class="keep"><h3>3. Monopoly</h3><div class="key"><span class="tag">3(a)</span><p>The patent is a <strong>legal barrier to entry</strong>: no one else may make the drug, and it has no close substitutes. So BioBear faces the whole downward-sloping market demand and chooses the quantity, which lets it set price above marginal cost.</p></div></div>
+<div class="key"><span class="tag">3(b)</span><span class="calc">Demand P = 100 − Q, so MR = 100 − 2Q (same intercept, twice as steep)
+MR = MC:  100 − 2Q = 20, so Q = 40 thousand doses
+Price off demand:  P = 100 − 40 = $60</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="164.4,100.4 282.8,186.8 164.4,186.8" fill="#d14" fill-opacity="0.28" stroke="none"/>
+<polygon points="46.0,100.4 164.4,100.4 164.4,186.8 46.0,186.8" fill="#2a9d8f" fill-opacity="0.18" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">20</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">Q1 = 40</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">60</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">Qc = 80</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">100</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">20</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">40</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">60</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">80</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">100</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Doses (thousands per month)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($ per dose)</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="126.0" y="64.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D</text>
+<polyline points="46.0,14.0 194.0,230.0" fill="none" stroke="#7a3fb0" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="198.0" y="222.0" fill="#7a3fb0" font-weight="700" text-anchor="start">MR</text>
+<polyline points="46.0,186.8 342.0,186.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="316.0" y="180.8" fill="#b8322a" font-weight="700" text-anchor="start">MC</text>
+<polyline points="46,100.4 164.4,100.4 164.4,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,186.8 282.8,186.8 282.8,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="164.4" cy="100.4" r="3.4" fill="#1d2430"/>
+<circle cx="164.4" cy="186.8" r="3.4" fill="#1d2430"/>
+<circle cx="282.8" cy="186.8" r="3.4" fill="#1d2430"/>
+<text x="173.3" y="91.8" fill="#1d2430" text-anchor="start" font-size="11" font-weight="600">monopoly (40, $60)</text>
+<text x="84.5" y="139.3" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">profit</text>
+<text x="84.5" y="156.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">$1.6 million</text>
+<text x="194.0" y="158.7" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">DWL</text>
+<text x="194.0" y="174.9" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">$0.8 million</text>
+</svg></div><div class="grade">Full credit: demand from (0, 100) to (100, 0), MR from (0, 100) to (50, 0), Q = 40 where MR crosses MC, P = $60 read up on demand. Edwards: "(1) Set Q where MR = MC (2) Set P off demand."</div></div>
+<div class="key"><span class="tag">3(c)</span><span class="calc">Profit = (P − MC) × Q = (60 − 20) × 40 = 1,600 thousand dollars
+       = $1.6 million per month
+Efficient Q: demand = MC, 100 − Q = 20, so Q = 80
+DWL = ½ × (80 − 40) × (60 − 20) = 800 thousand dollars
+    = $0.8 million per month</span><p>With flat MC and zero fixed cost, total cost is 20 × 40 = 800, so profit = total revenue − total cost = 2,400 − 800 = 1,600, the same as (P − MC) × Q. Q is in thousands, so write $1.6 million.</p><div class="grade">Full credit: $1.6 million profit and $0.8 million DWL, with the work. "1,600" and "800" are right only if labeled as thousands of dollars.</div></div>
+<div class="key"><span class="tag">3(d)</span><span class="calc">Competitive: P = MC = $20, Q = 80 thousand
+CS before = ½ × 40 × (100 − 60) = 800   ($0.8 million)
+CS after  = ½ × 80 × (100 − 20) = 3,200 ($3.2 million)</span><p>Price falls to $20, quantity doubles to 80 thousand doses, and consumer surplus rises by $2.4 million. BioBear's old $1.6 million profit goes back to consumers (it was a transfer, not a loss), and the $0.8 million deadweight loss is recovered: 800 + 1,600 + 800 = 3,200.</p></div>
+<div class="keep"><h3>4. Externality</h3><div class="key"><span class="tag">4(a)</span><span class="calc">Market: demand = PMC, 10 − Q = 2, so Q1 = 8 and P = $2
+SMC = PMC + EMC = 2 + 4 = 6
+Optimum: demand = SMC, 10 − Q = 6, so Q* = 4
+DWL = ½ × (8 − 4) × (6 − 2) = 8, which is $8,000 per month</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="164.4,100.4 282.8,100.4 282.8,186.8" fill="#d14" fill-opacity="0.3" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">Q* = 4</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">Q1 = 8</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">10</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Yard cleanups (thousands per month)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="98.4" y="46.4" fill="#1f5fbf" font-weight="700" text-anchor="start">D = PMB = SMB</text>
+<polyline points="46.0,186.8 342.0,186.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="52.0" y="180.8" fill="#b8322a" font-weight="700" text-anchor="start">PMC</text>
+<polyline points="46.0,100.4 342.0,100.4" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="246.0" y="94.4" fill="#d97706" font-weight="700" text-anchor="start">SMC = PMC + 4</text>
+<polyline points="46,100.4 164.4,100.4 164.4,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,186.8 282.8,186.8 282.8,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="164.4" cy="100.4" r="3.4" fill="#1d2430"/>
+<circle cx="282.8" cy="186.8" r="3.4" fill="#1d2430"/>
+<text x="256.2" y="130.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">DWL 8</text>
+</svg></div><div class="grade">Full credit: SMC drawn $4 above PMC, Q1 = 8 and Q* = 4 marked, DWL triangle between SMC and demand from 4 to 8, pointing toward the social optimum.</div></div></div>
+<div class="key"><span class="tag">4(b)</span><span class="calc">CS = ½ × 8 × (10 − 2) = 32, which is $32,000
+PS = 0   (flat MC: price equals MC on every unit)
+Cost to neighbors = $4 × 8 = 32, which is $32,000</span><p>Social surplus at the market outcome is 32 + 0 − 32 = 0. At Q* = 4 it would be the area between demand and SMC from 0 to 4: ½ × 4 × (10 − 6) = 8. The gap, 8, is the deadweight loss from (a).</p></div>
+<div class="key"><span class="tag">4(c)</span><p>A <strong>$4 per-unit (Pigouvian) tax</strong>, equal to the external marginal cost at Q*. It moves the private cost curve up to SMC, so the market lands on Q* = 4. A ban is <strong>not efficient</strong>: the first 4 thousand cleanups are worth more to buyers than their full social cost. Banning them throws away ½ × 4 × (10 − 6) = 8, or $8,000 a month, of surplus. The optimal amount of pollution is usually not zero (Fall 2025 question 1(g)).</p></div>
+<h2 id="drills">Part 2: Drills</h2><p>Each part has room to work, or use scratch paper. Do the sections you missed in Part 1 first. Answers are in the Part 2 key.</p>
+<section class="drill"><div class="keep"><h3>D1. Island economics (Problem Set 1, question 2)</h3><div class="tw"><table><tr><th>Person (10 hours a day)</th><th>Fish per hour</th><th>Coconuts per hour</th></tr>
+<tr><td>Bill</td><td>1</td><td>1</td></tr><tr><td>Chris</td><td>8</td><td>2</td></tr><tr><td>Robinson</td><td>2</td><td>2</td></tr></table></div><ol class="parts"><li>With no specialization (everyone splits their time the same way), draw the island PPC with fish on the vertical axis. What are the intercepts and the slope?<div class="work" style="height:110px"></div></li></ol></div><ol class="parts"><li>Rank the three by their opportunity cost of a coconut. Who should gather the first coconuts?<div class="work" style="height:70px"></div></li><li>Draw the PPC with specialization. Where is the kink, and what are the slopes?<div class="work" style="height:110px"></div></li><li>Just Bill and Chris: who specializes in what?<div class="work" style="height:70px"></div></li><li>Back to all three islanders. A new fishhook doubles everyone's fish per hour; coconuts per hour stay the same. Does the pattern of specialization change? Why or why not?<div class="work" style="height:70px"></div></li><li>Original table again (no fishhook), just Bill and Chris. If they need 10 coconuts a day, how many fish can they also have without specialization, and how many with it?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D2. Tom and Krisha</h3><p>Tom can produce 24 pounds of nuts or 12 pounds of coffee per day. Krisha can produce 12 pounds of nuts or 24 pounds of coffee per day.</p><ol class="parts"><li>Who has the comparative advantage in what?<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>Without trade, each divides their day so they end up with equal pounds of nuts and coffee. How much of each does each person get?<div class="work" style="height:70px"></div></li><li>If they specialize and split the total output 50-50, how much does each get?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D3. Opportunity cost of college</h3><p>Suppose tuition and fees are $15,000 a year, books $1,000, rent and food $20,000, and you could earn $60,000 a year working full time instead.</p><ol class="parts"><li>What is the opportunity cost of a year of college?<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>Do rent and food belong in it? Explain.<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D4. Shift or movement?</h3><p>For each, say which curve shifts (or none), which way, and what happens to P and Q.</p><ol class="parts num"><li>Coffee beans get more expensive. Market: lattes.<div class="work" style="height:46px"></div></li></ol></div><ol class="parts num"><li>A news story says: "Latte prices rose, so demand for lattes fell." Market: lattes. Did the demand curve shift? Describe what actually happened.<div class="work" style="height:46px"></div></li><li>Incomes rise, and ramen is an inferior good. Market: ramen.<div class="work" style="height:46px"></div></li><li>The price of tea, a substitute for coffee, rises. Market: coffee.<div class="work" style="height:46px"></div></li><li>New fracking technology. Market: oil.<div class="work" style="height:46px"></div></li><li>Many new firms enter. Market: food trucks.<div class="work" style="height:46px"></div></li><li>A heatwave hits and air conditioning is common. Market: electricity.<div class="work" style="height:46px"></div></li><li>Demand and supply both shift right. What do you know for sure?<div class="work" style="height:46px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D5. Elasticity from a slope (Problem Set 2, question 3(b))</h3><p>Demand is P = 12 − Q.</p><ol class="parts"><li>Use ε = (1/slope) × (P/Q) to find the elasticity at Q = 4 and at Q = 8.<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>Why are they different on a straight line?<div class="work" style="height:70px"></div></li><li>Where is demand unit elastic?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D6. Spending and elasticity (class 7)</h3><p>For (a) and (b), start from P = $100 and Q = 200.</p><ol class="parts"><li>The elasticity is −0.75 and the price rises 1%. Roughly what happens to total spending?<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>Same start, but the elasticity is −1.5.<div class="work" style="height:70px"></div></li><li>Edwards' in-class poll: ε = −3 and the price rises 1%. What happens to spending?<div class="work" style="height:70px"></div></li><li>Gas rises from $3 to $4 a gallon, a typical driver buys 50 gallons a month, and ε = −0.37. Using simple percentage changes, about how many gallons does the driver buy now? Does monthly spending rise or fall?<div class="work" style="height:90px"></div></li><li>Reverse use: the elasticity of demand is −0.5, and a supply shock cuts the quantity sold by 10%. By about how much does the price rise?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D7. A tax with numbers</h3><p>Demand is P = 10 − Q and supply is P = Q.</p><ol class="parts"><li>Find the equilibrium, CS, and PS.<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>A $2 per-unit tax is collected from sellers. Find the new quantity, the price buyers pay, the price sellers keep, tax revenue, CS, PS, and DWL.<div class="work" style="height:120px"></div></li><li>Who bears more of the tax, and why?<div class="work" style="height:70px"></div></li><li>How does a tax differ from a price ceiling in who ends up with the good?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D8. A subsidy with numbers</h3><p>Same curves (demand P = 10 − Q, supply P = Q), now with a $2 per-unit subsidy paid to sellers.</p><ol class="parts"><li>Find Q, the price buyers pay, the price sellers receive, the cost to the government, and the DWL.<div class="work" style="height:110px"></div></li></ol></div><ol class="parts"><li>At the new quantity, compare MB and MC.<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D9. Price ceiling and floor with numbers</h3><p>Same curves (demand P = 10 − Q, supply P = Q).</p><ol class="parts"><li>A ceiling at $3: find quantity supplied, quantity demanded, the shortage, CS, PS, and DWL.<div class="work" style="height:110px"></div></li></ol></div><ol class="parts"><li>A floor at $7: find the quantity traded and the surplus (excess supply).<div class="work" style="height:70px"></div></li><li>Why can the ceiling's true loss be bigger than the DWL triangle?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D10. Extreme supply curves (Problem Set 2, question 3; Fall 2025 final, question 4(b))</h3><ol class="parts"><li>Demand is P = 5 − Q, and supply is flat at MC = $1. Find the equilibrium, CS, PS, the supply elasticity, and the demand elasticity at equilibrium.<div class="work" style="height:90px"></div></li></ol></div><ol class="parts"><li>Add a $2 tax paid by producers. Find the new equilibrium, who bears the tax, CS, tax revenue, and DWL.<div class="work" style="height:90px"></div></li><li>Soybeans are already harvested and cannot be stored, so supply is vertical. China stops buying. What happens to price and quantity? Who would bear a tax here, and how big is the DWL?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D11. Households</h3><ol class="parts"><li>Income is $100, food costs $20 a meal (vertical axis), and clothing costs $50 a unit (horizontal axis). What are the intercepts and the slope of the budget line? What happens if clothing rises to $100? If income rises to $200?<div class="work" style="height:100px"></div></li></ol></div><ol class="parts"><li>A household splits its budget between electricity (E) and everything else. First, the price of electricity rises. Separately, a heatwave hits and the household runs the air conditioning more. For each, how does MU<sub>E</sub>/P<sub>E</sub> compare with the marginal utility per dollar of everything else, what does the household do, and which one shifts the demand curve for electricity?<div class="work" style="height:90px"></div></li><li>Each person's marginal utility of consumption is MU = 1/c, where c is dollars of consumption. Alice consumes $500 and Bob $100. Find each MU. What transfer from Alice to Bob makes the sum of their utilities as large as possible?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D12. Competitive firms</h3><ol class="parts"><li>Why does a small competitive firm see a flat demand curve, and what is its MR?<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>A firm's MC = 2q. The market price is $10. How much does it produce? At $14? What is the firm's supply curve?<div class="work" style="height:70px"></div></li><li>100 identical firms each have MC = $5 at 1,000 units and $6 at 2,000 units. What is industry quantity supplied at $5 and at $6?<div class="work" style="height:70px"></div></li><li>At P = $10 with MC = 2q, should the firm enter if its fixed cost is $30? If it is $20?<div class="work" style="height:70px"></div></li><li>What is the difference between profit and producer surplus?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D13. Monopoly, four ways</h3><ol class="parts"><li>From Edwards' class 10 notebook: demand is P = 6 − Q/4 and MC = Q/4. Find MR, the monopoly Q and P, profit with zero fixed cost, the efficient Q, and the DWL.<div class="work" style="height:110px"></div></li></ol></div><ol class="parts"><li>Using the lettered areas in the graph below, fill in the table for perfect competition (Qc) and monopoly (Q1). Which area is a transfer from consumers to the monopolist?<div class="fig" style="max-width:500px"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<polygon points="46.0,14.0 46.0,91.8 112.6,91.8" fill="#1f5fbf" fill-opacity="0.22" stroke="none"/>
+<polygon points="46.0,14.0 112.6,91.8 179.2,91.8" fill="#1f5fbf" fill-opacity="0.22" stroke="none"/>
+<polygon points="46.0,143.6 157.0,143.6 112.6,91.8 46.0,91.8" fill="#e9b949" fill-opacity="0.22" stroke="none"/>
+<polygon points="157.0,143.6 179.2,143.6 179.2,91.8 112.6,91.8" fill="#e9b949" fill-opacity="0.22" stroke="none"/>
+<polygon points="179.2,143.6 179.2,91.8 268.0,143.6" fill="#d14" fill-opacity="0.22" stroke="none"/>
+<polygon points="46.0,208.4 46.0,143.6 157.0,143.6 179.2,169.5" fill="#2a9d8f" fill-opacity="0.22" stroke="none"/>
+<polygon points="157.0,143.6 179.2,143.6 179.2,169.5" fill="#2a9d8f" fill-opacity="0.22" stroke="none"/>
+<polygon points="179.2,143.6 268.0,143.6 179.2,169.5" fill="#d14" fill-opacity="0.22" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="179.2" y1="230" x2="179.2" y2="234" stroke="#1d2430"/>
+<text x="179.2" y="245" text-anchor="middle" fill="#1d2430">Q1</text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430">Qc</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">Pc</text>
+<line x1="42" y1="91.8" x2="46" y2="91.8" stroke="#1d2430"/>
+<text x="39" y="95.8" text-anchor="end" fill="#1d2430">P1</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price</text>
+<text x="66.3" y="72.3" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">a</text>
+<text x="112.6" y="76.6" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">b</text>
+<text x="86.7" y="119.8" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">c</text>
+<text x="157.0" y="111.2" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">d</text>
+<text x="205.1" y="128.5" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">e</text>
+<text x="97.8" y="167.4" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">f</text>
+<text x="172.9" y="149.6" fill="#1d2430" text-anchor="middle" font-size="11" font-weight="700">g</text>
+<text x="203.2" y="153.3" fill="#1d2430" text-anchor="middle" font-size="12" font-weight="700">h</text>
+<polyline points="46.0,14.0 342.0,186.8" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="315.5" y="190.0" fill="#1f5fbf" font-weight="700" text-anchor="end">D = MB</text>
+<polyline points="46.0,14.0 231.0,230.0" fill="none" stroke="#7a3fb0" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="235.0" y="224.0" fill="#7a3fb0" font-weight="700" text-anchor="start">MR</text>
+<polyline points="46.0,208.4 342.0,122.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="320.0" y="114.0" fill="#b8322a" font-weight="700" text-anchor="start">MC</text>
+<polyline points="46,91.8 179.2,91.8 179.2,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,143.6 268.0,143.6 268.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+</svg></div><div class="tw"><table class="blank"><tr><th></th><th>Perfect competition (Qc)</th><th>Monopoly (Q1)</th></tr><tr><td>Consumer surplus</td><td></td><td></td></tr><tr><td>Producer surplus</td><td></td><td></td></tr><tr><td>Total surplus</td><td></td><td></td></tr><tr><td>Deadweight loss</td><td></td><td></td></tr></table></div></li><li>Demand for a patented drug rises. What happens to the monopolist's P and Q? Why does a monopolist have no supply curve?<div class="work" style="height:70px"></div></li><li>Fall 2025 question 3 redo: Taylor Swift faces ticket demand P = 300 − 10Q and MC = 10Q, with Q in millions of tickets and P in dollars. Assume fixed costs are zero. Find Q, P, profit, and the efficient quantity.<div class="work" style="height:110px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D14. Externalities, more ways</h3><ol class="parts"><li>Flu shots: demand (PMB) is P = 10 − Q, MC is flat at $4, and each shot gives other people $2 of benefit. Find the market Q, the efficient Q, the DWL, and the subsidy that fixes it.<div class="work" style="height:100px"></div></li></ol></div><ol class="parts"><li>Problem Set 2, question 3(f): demand is P = 5 − Q, MC = $1, pollution does $2 of damage per unit, and the seller is a monopolist. Why is the monopoly outcome efficient here?<div class="work" style="height:70px"></div></li><li>Match each name (Coase, Ostrom, Pigou, cap and trade) to one idea below.<ol class="plan" type="A" style="margin-top:6px"><li>Sell or hand out a fixed number of tradable permits, so every polluter faces the same price for pollution.</li><li>Communities that deal with each other over the long run can govern a shared resource with their own rules.</li><li>Clear property rights plus cheap bargaining let the affected parties fix the problem themselves.</li><li>A per-unit tax equal to the marginal external damage at the efficient quantity.</li></ol><div class="work" style="height:50px"></div></li><li>Why does heavy discounting of the future imply a small carbon tax?<div class="work" style="height:70px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D15. Two-point concept checks</h3><p>Answer each in two sentences.</p><ol class="parts num"><li>Which curve slopes downward, demand or supply? Why?<div class="work" style="height:56px"></div></li></ol></div><ol class="parts num"><li>Why is the area above supply and below price called producer surplus?<div class="work" style="height:56px"></div></li><li>What does the First Welfare Theorem say, and what does it ignore?<div class="work" style="height:56px"></div></li><li>Why is the PPC bowed out?<div class="work" style="height:56px"></div></li><li>Can there ever be an optimal level of pollution above zero?<div class="work" style="height:56px"></div></li><li>When can a price increase raise total spending on a good?<div class="work" style="height:56px"></div></li><li>What did the Finnish hairdresser value-added tax study find, and what does it say about the competitive model?<div class="work" style="height:56px"></div></li><li>What are the three conditions for allocative efficiency?<div class="work" style="height:56px"></div></li></ol></section>
+<section class="drill"><div class="keep"><h3>D16. Reading data (Problem Set 1, question 5)</h3><p>In Problem Set 1, question 5, a scatter plot shows European Union countries, one dot each: gas tax per liter on the horizontal axis and gas price per liter on the vertical axis. You do not need the figure for this drill. Edwards said judging this plot is "very, very similar to what you will be asked to do on an exam."</p><ol class="parts"><li>If the best-fit line has a slope of exactly 1, what does that say about who bears the tax and about the elasticity of supply?<div class="work" style="height:70px"></div></li></ol></div><ol class="parts"><li>What would a slope of 0.5 mean?<div class="work" style="height:70px"></div></li><li>The actual slope is about 1.3. Why might the line be steeper than one-for-one?<div class="work" style="height:70px"></div></li></ol></section>
+<h2 id="drillkey">Part 2 answer key</h2>
+<div class="key"><span class="tag">D1</span><span class="calc">(a) Most fish = 10×1 + 10×8 + 10×2 = 110
+    Most coconuts = 10×1 + 10×2 + 10×2 = 50
+    A straight line, slope = −110/50 = −2.2
+(b) A coconut costs Bill 1 fish, Robinson 1 fish, Chris 4 fish.
+    Bill and Robinson tie for the lowest opportunity cost,
+    so both gather the first coconuts. Chris fishes.
+(c) Start at 110 fish. Bill and Robinson switch first:
+    30 coconuts cost 30 fish, so the kink is at (30, 80), slope −1.
+    Then Chris: 20 more coconuts cost 80 fish, ending at (50, 0), slope −4.</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="113.2" y1="14" x2="113.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="170.4" y1="14" x2="170.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="227.6" y1="14" x2="227.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="284.8" y1="14" x2="284.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="56" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="56.0,32.0 227.6,86.0 342.0,230.0" fill="#2a9d8f" fill-opacity="0.18" stroke="none"/>
+<line x1="56" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="56" y1="14" x2="56" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="113.2" y1="230" x2="113.2" y2="234" stroke="#1d2430"/>
+<text x="113.2" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="170.4" y1="230" x2="170.4" y2="234" stroke="#1d2430"/>
+<text x="170.4" y="245" text-anchor="middle" fill="#1d2430">20</text>
+<line x1="227.6" y1="230" x2="227.6" y2="234" stroke="#1d2430"/>
+<text x="227.6" y="245" text-anchor="middle" fill="#1d2430">30</text>
+<line x1="284.8" y1="230" x2="284.8" y2="234" stroke="#1d2430"/>
+<text x="284.8" y="245" text-anchor="middle" fill="#1d2430">40</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">50</text>
+<line x1="52" y1="194.0" x2="56" y2="194.0" stroke="#1d2430"/>
+<text x="49" y="198.0" text-anchor="end" fill="#1d2430">20</text>
+<line x1="52" y1="158.0" x2="56" y2="158.0" stroke="#1d2430"/>
+<text x="49" y="162.0" text-anchor="end" fill="#1d2430">40</text>
+<line x1="52" y1="122.0" x2="56" y2="122.0" stroke="#1d2430"/>
+<text x="49" y="126.0" text-anchor="end" fill="#1d2430">60</text>
+<line x1="52" y1="86.0" x2="56" y2="86.0" stroke="#1d2430"/>
+<text x="49" y="90.0" text-anchor="end" fill="#1d2430">80</text>
+<line x1="52" y1="50.0" x2="56" y2="50.0" stroke="#1d2430"/>
+<text x="49" y="54.0" text-anchor="end" fill="#1d2430">100</text>
+<line x1="52" y1="14.0" x2="56" y2="14.0" stroke="#1d2430"/>
+<text x="49" y="18.0" text-anchor="end" fill="#1d2430">120</text>
+<text x="199.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Coconuts per day</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Fish per day</text>
+<polyline points="56.0,32.0 342.0,230.0" fill="none" stroke="#6b7380" stroke-width="2.2" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<text x="73.2" y="131.0" fill="#6b7380" text-anchor="start" font-size="10" font-weight="600">PPC1, no specialization</text>
+<text x="73.2" y="149.0" fill="#6b7380" text-anchor="start" font-size="10" font-weight="600">(straight, slope −2.2)</text>
+<polyline points="56.0,32.0 227.6,86.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="233.6" y="80.0" fill="#1f5fbf" font-weight="700" text-anchor="start">PPC2</text>
+<polyline points="56,86.0 227.6,86.0 227.6,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="227.6" cy="86.0" r="3.4" fill="#1d2430"/>
+<text x="233.3" y="68.0" fill="#1d2430" text-anchor="start" font-size="11" font-weight="600">kink (30, 80)</text>
+<text x="118.9" y="43.7" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">slope −1</text>
+<text x="290.5" y="147.2" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">slope −4</text>
+</svg></div><span class="calc">(d) A coconut costs Bill 1 fish and Chris 4 fish,
+    so Bill gathers coconuts and Chris fishes.
+(e) With the fishhook, a coconut costs Bill 2 fish, Robinson 4/2 = 2 fish,
+    and Chris 16/2 = 8 fish. Every opportunity cost doubles, so the
+    ranking is the same and nothing changes.
+(f) Without specialization: 90 fish or 30 coconuts, slope −3,
+    so 90 − 3 × 10 = 60 fish.
+    With specialization: Bill makes the 10 coconuts, Chris catches 80 fish.
+    Gain = 20 fish.</span><div class="grade">The "tricky" part of Problem Set 1 is (b): equal opportunity costs mean Bill and Robinson both gather coconuts. One kink, not two.</div></div>
+<div class="key"><span class="tag">D2</span><span class="calc">(a) Tom: 1 pound of nuts costs him 1/2 pound of coffee.
+    Krisha: 1 pound of nuts costs her 2 pounds of coffee.
+    Tom has the comparative advantage in nuts, Krisha in coffee.
+(b) Tom spends 2/3 of his day on coffee and 1/3 on nuts:
+    24 × 1/3 = 8 nuts and 12 × 2/3 = 8 coffee.
+    Krisha spends 2/3 on nuts and 1/3 on coffee:
+    12 × 2/3 = 8 nuts and 24 × 1/3 = 8 coffee. Each gets (8, 8).
+(c) Tom makes 24 nuts, Krisha makes 24 coffee.
+    Split 50-50, each gets 12 nuts and 12 coffee, outside both PPCs.</span></div>
+<div class="key"><span class="tag">D3</span><span class="calc">(a) $15,000 + $1,000 + $60,000 = $76,000 per year</span><p>(b) No. Rent and food are paid whether or not you go to college, so they cancel out of the comparison. Foregone earnings are the biggest piece, and the Fall 2025 key says full credit needs them.</p></div>
+<div class="key"><span class="tag">D4</span><ol><li>Supply of lattes shifts left (an input got more expensive). P up, Q down.</li><li>No curve shifts. A change in a good's own price moves buyers along demand (quantity demanded falls) and sellers along supply; it never shifts that good's own curves. If the price really rose, something else shifted supply or demand first.</li><li>Demand for ramen shifts left. P down, Q down.</li><li>Demand for coffee shifts right (the substitute got more expensive). P up, Q up.</li><li>Supply of oil shifts right (down). P down, Q up.</li><li>Supply shifts right (more sellers). P down, Q up.</li><li>Demand for electricity shifts right: the marginal utility of electricity rises at every quantity (Problem Set 2, question 2(c): "the emphasis on shift is intentional"). P up, Q up.</li><li>Q rises for sure. P could go either way; it depends on which shift is bigger.</li></ol></div>
+<div class="key"><span class="tag">D5</span><span class="calc">(a) Slope = −1, so 1/slope = −1
+    Q = 4, P = 8:  ε = −1 × 8/4 = −2     elastic
+    Q = 8, P = 4:  ε = −1 × 4/8 = −0.5   inelastic
+(c) Unit elastic where P/Q = 1: Q = 6, P = 6</span><p>(b) The slope is the same everywhere, but P/Q changes, so elasticity changes. Higher up a straight demand line, demand is more elastic.</p></div>
+<div class="key"><span class="tag">D6</span><span class="calc">(a) %Δspending ≈ %ΔP + %ΔQ = 1% + (−0.75%) = +0.25%
+    Check: 100 × 200 = 20,000 before, 101 × 198.5 = 20,049 after
+(b) 1% + (−1.5%) = −0.5%
+    Check: 101 × 197 = 19,897
+(c) 1% + (−3%) = −2%, so spending falls about 2%
+(d) %ΔP = 1/3 = 33%.  %ΔQ = −0.37 × 33% = about −12%
+    Gallons: 50 × (1 − 0.12) = about 44
+    Spending: $3 × 50 = $150 before, $4 × 44 = about $175 after
+    It rises, because |ε| = 0.37 < 1 (inelastic).
+(e) ε = %ΔQ / %ΔP, so −0.5 = −10% / %ΔP, and %ΔP = +20%</span></div>
+<div class="key"><span class="tag">D7</span><span class="calc">(a) 10 − Q = Q, so Q = 5 and P = 5
+    CS = ½ × 5 × 5 = 12.5    PS = ½ × 5 × 5 = 12.5
+(b) Wedge of $2: 10 − Q = Q + 2, so Q = 4
+    Buyers pay P = 10 − 4 = $6. Sellers keep $6 − 2 = $4.
+    Revenue = 2 × 4 = 8    CS = ½ × 4 × 4 = 8    PS = ½ × 4 × 4 = 8
+    DWL = ½ × 2 × (5 − 4) = 1
+    Check: 8 + 8 + 8 + 1 = 25 = 12.5 + 12.5</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,14.0 46.0,100.4 164.4,100.4" fill="#1f5fbf" fill-opacity="0.18" stroke="none"/>
+<polygon points="46.0,100.4 164.4,100.4 164.4,143.6 46.0,143.6" fill="#e9b949" fill-opacity="0.45" stroke="none"/>
+<polygon points="46.0,143.6 164.4,143.6 46.0,230.0" fill="#b8322a" fill-opacity="0.15" stroke="none"/>
+<polygon points="164.4,100.4 194.0,122.0 164.4,143.6" fill="#d14" fill-opacity="0.45" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">10</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="318.4" y="202.4" fill="#1f5fbf" font-weight="700" text-anchor="start">D</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="320.4" y="43.6" fill="#b8322a" font-weight="700" text-anchor="start">S</text>
+<line x1="164.4" y1="143.6" x2="164.4" y2="100.4" stroke="#111" stroke-width="3"/>
+<polyline points="46,100.4 164.4,100.4 164.4,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,143.6 164.4,143.6 164.4,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="81.5" y="76.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">CS 8</text>
+<text x="105.2" y="116.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">revenue 8</text>
+<text x="84.5" y="178.2" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600">PS 8</text>
+<text x="220.6" y="115.5" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">DWL 1</text>
+<text x="158.5" y="136.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">$2</text>
+</svg></div><p>(c) Each side bears $1, because the curves are equally steep. Whichever side is more inelastic bears more.</p><p>(d) A tax still gives the good to the highest-value buyers and lowest-cost sellers (no misallocation). A price ceiling creates a shortage, so the good may go to people who value it less.</p></div>
+<div class="key"><span class="tag">D8</span><span class="calc">(a) Sellers receive the buyers' price + 2: 10 − Q + 2 = Q, so Q = 6
+    Buyers pay 10 − 6 = $4. Sellers receive $4 + 2 = $6.
+    Government cost = 2 × 6 = 12
+    CS = ½ × 6 × 6 = 18 (up 5.5)   PS = ½ × 6 × 6 = 18 (up 5.5)
+    DWL = ½ × 2 × (6 − 5) = 1
+    Check: gains of 11 = cost of 12 − DWL of 1</span><p>(b) At Q = 6, MC = 6 but MB = 4: the units from 5 to 6 cost more to make than they are worth. The DWL triangle sits beyond Q = 5 and points back toward the efficient quantity.</p></div>
+<div class="key"><span class="tag">D9</span><span class="calc">(a) At $3: Q<sub>S</sub> = 3, Q<sub>D</sub> = 10 − 3 = 7, shortage = 4
+    CS = area under demand above $3 from 0 to 3
+       = (7 + 4)/2 × 3 = 16.5 (if the highest-value buyers get the units)
+    PS = ½ × 3 × 3 = 4.5      DWL = ½ × (5 − 3) × (7 − 3) = 4
+    Check: 16.5 + 4.5 + 4 = 25
+(b) At $7: Q<sub>D</sub> = 3, Q<sub>S</sub> = 7, surplus = 4, quantity traded = 3, DWL = 4</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="105.2" y1="14" x2="105.2" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.4" y1="14" x2="164.4" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="223.6" y1="14" x2="223.6" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="282.8" y1="14" x2="282.8" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="186.8" x2="342" y2="186.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="143.6" x2="342" y2="143.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="100.4" x2="342" y2="100.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="57.2" x2="342" y2="57.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="134.8,78.8 194.0,122.0 134.8,165.2" fill="#d14" fill-opacity="0.35" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.2" y1="230" x2="105.2" y2="234" stroke="#1d2430"/>
+<text x="105.2" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="164.4" y1="230" x2="164.4" y2="234" stroke="#1d2430"/>
+<text x="164.4" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="223.6" y1="230" x2="223.6" y2="234" stroke="#1d2430"/>
+<text x="223.6" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="282.8" y1="230" x2="282.8" y2="234" stroke="#1d2430"/>
+<text x="282.8" y="245" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="42" y1="186.8" x2="46" y2="186.8" stroke="#1d2430"/>
+<text x="39" y="190.8" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="143.6" x2="46" y2="143.6" stroke="#1d2430"/>
+<text x="39" y="147.6" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="100.4" x2="46" y2="100.4" stroke="#1d2430"/>
+<text x="39" y="104.4" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="57.2" x2="46" y2="57.2" stroke="#1d2430"/>
+<text x="39" y="61.2" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">10</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="318.4" y="202.4" fill="#1f5fbf" font-weight="700" text-anchor="start">D</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="320.4" y="43.6" fill="#b8322a" font-weight="700" text-anchor="start">S</text>
+<polyline points="46.0,165.2 342.0,165.2" fill="none" stroke="#111" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="280.0" y="159.2" fill="#111" font-weight="700" text-anchor="start">ceiling $3</text>
+<polyline points="46,165.2 134.8,165.2 134.8,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,165.2 253.2,165.2 253.2,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="194.0" y="199.8" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">shortage = 7 − 3 = 4</text>
+<text x="140.7" y="112.3" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">DWL 4</text>
+</svg></div><p>(c) The triangle assumes the 3 units go to the buyers with the highest willingness to pay. With a shortage they may not (queuing, luck, the long-time tenant in a rent-controlled unit), so misallocation adds loss beyond the triangle.</p></div>
+<div class="key"><span class="tag">D10</span><span class="calc">(a) 5 − Q = 1, so Q = 4 and P = 1
+    CS = ½ × 4 × 4 = 8.  PS = 0 (no area between price and flat supply)
+    Supply elasticity: infinite (flat)
+    Demand: ε = (1/−1) × (1/4) = −0.25, inelastic
+(b) 5 − Q = 1 + 2, so Q = 2. Buyers pay $3, producers keep $1.
+    Consumers bear all of the tax (perfectly elastic supply).
+    CS = ½ × 2 × 2 = 2   PS = 0   Revenue = 2 × 2 = 4   DWL = ½ × 2 × 2 = 2
+    Check: 2 + 4 + 2 = 8</span><p>(c) Demand shifts left and supply is vertical, so price falls to where the new demand curve crosses the vertical supply line, and quantity does not change. A tax would fall entirely on producers (they cannot reduce quantity), and DWL would be zero because quantity does not change.</p></div>
+<div class="key"><span class="tag">D11</span><span class="calc">(a) Food intercept = 100/20 = 5 meals. Clothing intercept = 100/50 = 2.
+    Slope = −50/20 = −2.5
+    If clothing rises to $100: clothing intercept 1, slope −5. The line
+    pivots inward around the food intercept and gets steeper.
+    If income rises to $200: parallel shift out, intercepts 10 and 4.</span><p>(b) Price rise: MU<sub>E</sub>/P<sub>E</sub> falls below the marginal utility per dollar of everything else, so the household buys less electricity and more of everything else. That is a movement along demand. Heatwave: MU<sub>E</sub> jumps at every quantity, so MU<sub>E</sub>/P<sub>E</sub> rises above the other side; the household buys more electricity and less of everything else. That is a shift of demand.</p><span class="calc">(c) MU<sub>Alice</sub> = 1/500 = 0.002    MU<sub>Bob</sub> = 1/100 = 0.01
+    The sum is largest when the MUs are equal, which means equal
+    consumption: (500 + 100)/2 = 300 each, a $200 transfer.</span><p>Each dollar moved is worth more to Bob (the marginal benefit of the transfer) than it costs Alice (the marginal cost), until their MUs are equal.</p></div>
+<div class="key"><span class="tag">D12</span><p>(a) It is tiny relative to the market, so its output does not move the price: demand is perfectly elastic at the market price, and MR = P.</p><span class="calc">(b) P = MC: 10 = 2q, so q = 5. At $14, q = 7.
+    The firm's supply curve is its MC curve.
+(c) 100 × 1,000 = 100,000 at $5;  100 × 2,000 = 200,000 at $6
+    (add the firms' quantities horizontally)
+(d) Area between P and MC from 0 to 5 = ½ × 5 × 10 = 25
+    Fixed cost 30 > 25: do not enter. Fixed cost 20 < 25: enter.</span><p>(e) Producer surplus is revenue minus variable cost (the area above MC and below price). Profit also subtracts fixed cost: profit = PS − fixed cost. Edwards flags this as a hard distinction.</p></div>
+<div class="key"><span class="tag">D13</span><span class="calc">(a) MR has the same intercept as demand and twice the slope: MR = 6 − Q/2
+    MR = MC: 6 − Q/2 = Q/4, so Q = 8. P = 6 − 8/4 = $4. MC at 8 = 2.
+    Profit = total revenue − area under MC = 32 − ½ × 8 × 2 = 24
+    Efficient: 6 − Q/4 = Q/4, so Q = 12 and P = 3
+    DWL = ½ × (12 − 8) × (4 − 2) = 4</span><p>(b)</p><div class="tw"><table><tr><th></th><th>Perfect competition (Qc)</th><th>Monopoly (Q1)</th></tr><tr><td>Consumer surplus</td><td>a + b + c + d + e</td><td>a + b</td></tr><tr><td>Producer surplus</td><td>f + g + h</td><td>c + d + f + g</td></tr><tr><td>Total surplus</td><td>a + b + c + d + e + f + g + h</td><td>a + b + c + d + f + g</td></tr><tr><td>Deadweight loss</td><td>0</td><td>e + h</td></tr></table></div><p>c + d is consumer surplus under competition but producer surplus under monopoly: a transfer, not a loss.</p><p>(c) Both P and Q rise (Edwards' Humira example): the new MR crosses MC further right, and price is read off the higher demand. A monopolist has no supply curve because it picks one point on whatever demand it faces, so there is no fixed price-quantity schedule to move along.</p><span class="calc">(d) MR = 300 − 20Q = MC = 10Q, so Q = 10 million. P = 300 − 100 = $200.
+    Total revenue = $200 × 10 million = $2 billion
+    Total cost = triangle under MC = ½ × 10 million × $100 = $0.5 billion
+    Profit = $2 billion − $0.5 billion = $1.5 billion
+    Efficient: 300 − 10Q = 10Q, so Q = 15 million</span></div>
+<div class="key"><span class="tag">D14</span><span class="calc">(a) Market: 10 − Q = 4, so Q1 = 6.  SMB = 12 − Q; 12 − Q = 4, so Q* = 8
+    DWL = ½ × (8 − 6) × 2 = 2
+    Fix: a $2 subsidy per shot (the external marginal benefit at Q*)</span><div class="fig"><svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="194.0,158.0 243.3,158.0 194.0,122.0" fill="#d14" fill-opacity="0.35" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">Q1 = 6</text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430">Q* = 8</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430">12</text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Flu shots (thousands)</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,50.0 292.7,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="100.3" y="104.0" fill="#1f5fbf" text-anchor="end" font-size="11" font-weight="700">D = PMB</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#0f8a5f" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="129.9" y="55.4" fill="#0f8a5f" text-anchor="start" font-size="11" font-weight="700">SMB = PMB + 2</text>
+<polyline points="46.0,158.0 342.0,158.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="282.0" y="152.0" fill="#b8322a" font-weight="700" text-anchor="start">MC = SMC</text>
+<polyline points="46,158.0 194.0,158.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,158.0 243.3,158.0 243.3,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="226.1" y="132.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600">DWL 2</text>
+</svg></div><p>(b) The monopoly sets MR = 5 − 2Q = 1, so Q = 2 and P = 3. Social marginal cost is 1 + 2 = 3, which crosses demand at Q = 2. The monopolist's output cut happens to equal the externality correction ("seemingly through magic," a lucky coincidence). Monopoly profit = (3 − 1) × 2 = 4.</p><p>(c) Coase is C: with clear property rights and cheap bargaining, private negotiation solves the externality. Ostrom is B: communities that interact over the long run can govern a commons through trust and their own rules, with no one-size-fits-all fix. Pigou is D: a per-unit tax (or subsidy) equal to the marginal external effect at the efficient quantity. Cap and trade is A: tradable permits give every emitter the same price of pollution; set the cap so that price equals the marginal external damage.</p><p>(d) Most climate damage happens far in the future. If you discount the future heavily, those damages count for little today, so the marginal damage of a ton of carbon, and the optimal tax, looks small.</p></div>
+<div class="key"><span class="tag">D15</span><ol><li>Demand, because marginal benefit (willingness to pay) falls as you consume more: "more is better, but at a decreasing rate."</li><li>Supply is marginal cost. Sellers get the market price on every unit, but each unit only costs its MC, so the area between price and supply adds up price minus MC over all units sold.</li><li>A competitive equilibrium maximizes total surplus (it is efficient). It ignores equity: a dollar of surplus counts the same no matter who gets it, and willingness to pay depends on income.</li><li>Opportunity cost rises as you produce more of one good, because resources and people are good at different things (specialization by comparative advantage).</li><li>Yes. The efficient quantity is where social marginal cost equals social marginal benefit, which is usually positive. It could be zero, but there is no reason it must be.</li><li>When demand is inelastic: the percentage drop in quantity is smaller than the percentage rise in price, so P × Q rises.</li><li>Only about half of a value-added tax cut was passed on to consumers, while a tax increase was almost fully passed on. Prices do not always behave the way the basic competitive model predicts, so do not take it as gospel.</li><li>Produce up to MB = MC; the good goes to the consumers with the highest MB; it is made by the producers with the lowest MC.</li></ol></div>
+<div class="key"><span class="tag">D16</span><p>(a) Slope 1: each euro of tax raises the price by a euro, so consumers bear all of it. That happens when supply is perfectly elastic (flat), like Edwards' gas station story: the world oil price plus station costs. (Perfectly inelastic demand would also do it, but gas demand does respond to price, so flat supply is the better reading.)</p><p>(b) Slope 0.5: consumers bear half and producers half, so the two sides are about equally elastic.</p><p>(c) A slope above 1 cannot come from incidence alone, since consumers cannot bear more than all of a tax. Two reasons it can show up: value-added tax (around 20% in Europe) is charged on the price including the gas tax, so each euro of gas tax raises the pump price by about 1.20 euros; and richer countries have both higher gas taxes and higher land and labor costs, so their gas costs more for reasons besides the tax.</p></div>
+</main>
+</body>
+</html>

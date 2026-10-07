@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECON 2 Midterm Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* One centered column: title, two document cards, a short list of outside practice */
+:root{--bg:#f6f7f9;--card:#ffffff;--ink:#151b26;--mute:#596273;--rule:#d9dde4;--accent:#0b4f7c;--gold:#f1c64a;
+--display:"Fira Sans Condensed","Arial Narrow",Arial,sans-serif;--body:"Fira Sans",Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141b;--card:#171d27;--ink:#e8ebf0;--mute:#a2abb9;--rule:#2b3341;--accent:#7cc0ea;--gold:#d9ad35;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141b;--card:#171d27;--ink:#e8ebf0;--mute:#a2abb9;--rule:#2b3341;--accent:#7cc0ea;--gold:#d9ad35;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5;padding-inline:16px;padding-block:40px 64px}
+main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.eyebrow{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--mute)}
+h1{font-family:var(--display);font-size:clamp(34px,7vw,52px);line-height:1;margin:6px 0 10px;letter-spacing:-.01em;text-wrap:balance}
+h1 span{background:linear-gradient(transparent 62%,var(--gold) 62%)}
+p{margin:0}
+.lede{color:var(--mute);max-width:60ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h2{font-family:var(--display);font-size:22px;margin:0}
+.card p{color:var(--mute);font-size:15px}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+a.btn{font-family:var(--display);font-weight:600;font-size:15px;text-decoration:none;padding:7px 14px;border-radius:7px;border:1.5px solid var(--accent);color:var(--accent)}
+a.btn.primary{background:var(--accent);color:var(--card)}
+a.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h3{font-family:var(--display);font-size:18px;margin:0 0 6px}
+ul{margin:0;padding-left:18px;color:var(--mute)}
+li{margin:4px 0}
+li a{color:var(--accent)}
+footer{font-size:13px;color:var(--mute);border-top:1px solid var(--rule);padding-top:14px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">ECON 2 · Prof. Ryan Edwards · Fall 2026</p>
+<h1>Midterm <span>Kit</span></h1>
+<p class="lede">A two-sided cheat sheet and a full practice midterm in Edwards' format, built from the F26 slides, every lecture, last year's exam, and both problem sets. Midterm: Thursday, October 8, 60 minutes, 60 points.</p>
+</header>
+<section class="cards">
+<article class="card">
+<h2>Cheat sheet</h2>
+<p>One page, front and back, the size he allows. Every formula, trap, and class example, with the graphs he expects.</p>
+<div class="links"><a class="btn primary" href="cheatsheet.html">Open</a><a class="btn" href="ECON2-cheat-sheet.pdf">Print PDF</a></div>
+</article>
+<article class="card">
+<h2>Practice midterm and drills</h2>
+<p>A 60-point timed practice exam plus drills for every question type, with step-by-step answers and what earns full credit.</p>
+<div class="links"><a class="btn primary" href="worksheet.html">Open</a><a class="btn" href="ECON2-midterm-worksheet.pdf">Print PDF</a></div>
+</article>
+</section>
+<section>
+<h3>More practice</h3>
+<ul>
+<li><a href="https://hellomate2.github.io/econ2-packet/">ECON 2 review packet</a>: units 1 to 11 and the worked F25 midterm (unit 26).</li>
+<li><a href="https://eml.berkeley.edu/~saez/econ2/econ2.html">Saez ECON 2 exams with solutions</a> (Fall 2023 and 2024 midterms cover the same topics).</li>
+</ul>
+</section>
+<footer>Study order: the real F25 midterm cold, then this practice midterm with only your cheat sheet, then Problem Set 2 Q3 from a blank page, then the drills you missed.</footer>
+</main>
+</body>
+</html>
