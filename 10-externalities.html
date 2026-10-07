@@ -1,0 +1,529 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Externalities · ECON 2 Midterm</title><meta name="description" content="Class 11. Social versus private cost, Pigouvian taxes, and optimal pollution."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"></head><body>
+<header class="top"><button class="menu-btn" aria-label="Open unit list">Units</button><a class="brand" href="index.html">ECON 2 <span>Midterm</span></a><nav><a href="index.html" class="">Home</a><a href="flashcards.html" class="">Flashcards</a><a href="worksheet.html" class="">Practice midterm</a><a href="cheatsheet.html" class="">Cheat sheet</a></nav></header>
+<div class="layout"><aside class="side"><h4>Units</h4><a href="00-exam.html" data-unit="00-exam" class=""><span class="num">00</span><span>How the midterm works</span><span class="chk">&#10003;</span></a><a href="01-opportunity-cost.html" data-unit="01-opportunity-cost" class=""><span class="num">01</span><span>Opportunity cost and the PPC</span><span class="chk">&#10003;</span></a><a href="02-comparative-advantage.html" data-unit="02-comparative-advantage" class=""><span class="num">02</span><span>Comparative advantage</span><span class="chk">&#10003;</span></a><a href="03-supply-demand.html" data-unit="03-supply-demand" class=""><span class="num">03</span><span>Supply and demand</span><span class="chk">&#10003;</span></a><a href="04-surplus-price-controls.html" data-unit="04-surplus-price-controls" class=""><span class="num">04</span><span>Surplus and price controls</span><span class="chk">&#10003;</span></a><a href="05-elasticity.html" data-unit="05-elasticity" class=""><span class="num">05</span><span>Elasticity</span><span class="chk">&#10003;</span></a><a href="06-taxes-subsidies.html" data-unit="06-taxes-subsidies" class=""><span class="num">06</span><span>Taxes and subsidies</span><span class="chk">&#10003;</span></a><a href="07-households.html" data-unit="07-households" class=""><span class="num">07</span><span>Households and the Rational Spending Rule</span><span class="chk">&#10003;</span></a><a href="08-firms.html" data-unit="08-firms" class=""><span class="num">08</span><span>Competitive firms</span><span class="chk">&#10003;</span></a><a href="09-monopoly.html" data-unit="09-monopoly" class=""><span class="num">09</span><span>Monopoly</span><span class="chk">&#10003;</span></a><a href="10-externalities.html" data-unit="10-externalities" class="on"><span class="num">10</span><span>Externalities</span><span class="chk">&#10003;</span></a><a href="11-past-exam.html" data-unit="11-past-exam" class=""><span class="num">11</span><span>The Fall 2025 midterm, walked through</span><span class="chk">&#10003;</span></a><h4>Tools</h4><a href="flashcards.html"><span class="num">&#9638;</span><span>Flashcards</span></a><a href="worksheet.html"><span class="num">&#9998;</span><span>Practice midterm</span></a><a href="cheatsheet.html"><span class="num">&#9636;</span><span>Cheat sheet</span></a></aside><main class="content"><article><header class="unit-head">
+  <p class="unit-meta">Class 11 · Externalities</p>
+  <h1>Externalities and climate change</h1>
+  <p class="lede">An externality is a cost or benefit that lands on people outside a market, so the market price leaves it out and the market produces the wrong quantity. On the exam this shows up as a short answer that needs the words social marginal cost and social marginal benefit, and as a graph or calculation like Problem Set 2 question 3, where you find the market quantity, the efficient quantity, the deadweight loss, and the corrective tax.</p>
+</header>
+
+<section id="exam">
+<h2>How it shows up on the exam</h2>
+<p>On the Fall 2025 midterm (F25 from here on), externalities appeared as one 2-point short answer, question 1(g): can there ever be an "optimal" level of polluting, or is it always zero? You had to refer to social marginal cost and social marginal benefit. The official answer says the socially optimal quantity is typically nonzero (and finite), found where social marginal cost crosses social marginal benefit (demand, or willingness to pay). It could be zero, but there is no reason it must be.</p>
+<p>This year Edwards drilled the topic with numbers on Problem Set 2, question 3 ("Taxes, monopoly, and externalities in a nonstandard case"). Part (d) adds a $2-per-unit pollution cost to a market with demand P = 5 − Q and a flat marginal cost of $1, and asks for the equilibrium, consumer surplus, producer surplus, total external cost, deadweight loss, and the tax that restores efficiency. Part (f) combines that pollution with a monopolist. Both are fully worked below. Since he said on the Class 11 slides that topics covered more in class "will take more prominence," and the problem set is the closest thing to his exam, expect at least a short answer and quite possibly a graph or calculation.</p>
+<p>Three things to know about scope:</p>
+<ul>
+<li>The lecture ran out of time at Elinor Ostrom. He never said the Pigouvian tax, cap and trade, congestion pricing, or carbon tax slides out loud, but they are on the slides and the Pigouvian tax is tested on Problem Set 2 question 3(d), so learn them from this page.</li>
+<li>Ostrom's trust idea is "not likely to be on the exam unless I flesh it out relatively well" (Class 11). If it shows up, the question will explain it.</li>
+<li>Case studies on the exam are usually new and explained for you (Class 08). You do not need to memorize the London or New York numbers, but knowing what they show helps you answer a new case quickly.</li>
+</ul>
+<div class="tip"><p>On F25, graph parts were worth 4 points each. Full credit on an externality graph means: the external cost drawn as a gap between SMC and PMC (or the external benefit as a gap between SMB and demand), the market quantity and the efficient quantity both marked with values, and the deadweight loss triangle shaded between them, pointing toward the social optimum. For the short answer, use his words: social marginal cost, social marginal benefit, willingness to pay.</p></div>
+</section>
+
+<section id="learn">
+<h2>The ideas, explained</h2>
+
+<h3>What an externality is</h3>
+<p>In class Edwards put it simply: externalities are things other people do that affect you, even though you did not do them. The slide definition is that an externality is an additional cost or benefit triggered by market activity that is not paid or enjoyed by the market participants; it falls on external groups. A market moves a good from sellers to buyers at a price both agree on. If that deal creates spillover effects on people who were not part of the agreement, those effects are externalities, and nobody in the deal has a reason to count them.</p>
+<p>His campus example: a scooter rider bought the scooter at the market price, so the scooter is worth at least that much to them. But that price contained no insurance against the small chance that someone trips over the scooter in a hallway during an evacuation. That risk is a cost to other people, so a scooter parked inside is a negative externality. Other examples from the slides and lecture:</p>
+<div class="tw"><table class="data">
+<thead><tr><th>Negative externalities (extra cost to others)</th><th>Positive externalities (extra benefit to others)</th></tr></thead>
+<tbody>
+<tr><td>Pollution from burning gasoline</td><td>Vaccines: your flu shot also cuts the chance you spread flu</td></tr>
+<tr><td>Secondhand smoke</td><td>Education: kids learn to play well with others, commit fewer crimes</td></tr>
+<tr><td>Texting or drinking while driving</td><td>Technology spillovers that other firms learn from</td></tr>
+<tr><td>Pesticide runoff, construction noise</td><td>Planting flowers in your yard that neighbors enjoy</td></tr>
+<tr><td>Data centers: hum and power use felt by a small local group</td><td>Beehives that pollinate the neighbors' gardens</td></tr>
+</tbody>
+</table></div>
+<p>The same activity can be both. In his bees story, a neighbor's hives had no water source, so the bees drank from a rental's swimming pool and stung two kids. The class poll answer was negative externality, even though pollination is a positive one. He added that if the renters had known about the bees, the rent should have reflected the risk.</p>
+
+<h3>Private versus social</h3>
+<p>"Private" means the people participating in the market: buyers, sellers, and the government if there is a tax or subsidy. "Social" means everyone, inside and outside the market. Edwards stressed that social does not mean socialism; it means costs or benefits "that the market does not naturally absorb" and that are felt broadly.</p>
+<p>The demand curve is the private marginal benefit (PMB): each buyer's willingness to pay for one more unit. The supply curve is the private marginal cost (PMC): what one more unit costs the sellers. The external pieces are:</p>
+<ul>
+<li>External marginal cost (EMC): the additional cost to people outside the market when one more unit is produced and consumed.</li>
+<li>External marginal benefit (EMB): the additional benefit to people outside the market when one more unit is produced and consumed.</li>
+</ul>
+<div class="key"><p><code class="f">SMC = PMC + EMC</code> and <code class="f">SMB = PMB + EMB</code>. The market produces where PMB = PMC (demand meets supply). The efficient (socially optimal) quantity Q* is where SMB = SMC.</p></div>
+<p>A negative externality raises social marginal cost above private marginal cost, so it lives on the supply side. A positive externality raises social marginal benefit above private marginal benefit, so it lives on the demand side. In his words, a positive externality is "a story about the marginal benefit, the demand curve," and a negative one is a story about "the marginal cost, the supply curve." Getting this right tells you which curve to draw a second copy of.</p>
+
+<h3>Negative externalities: the market overproduces</h3>
+<p>Take Edwards' gasoline market. Burning gas pollutes, so each gallon imposes a cost on people who neither bought nor sold it. Buyers and sellers only weigh their own benefit and cost, so they trade until PMB = PMC, at Q1. But at Q1 the true cost of the last gallon to society, SMC, is higher than the benefit. Society would be better off with less: Q*, where SMC crosses demand.</p>
+<p>Notice the demand curve is labeled D = PMB = SMB. Edwards said he could not think of an external benefit of burning gasoline, so private and social marginal benefit are the same curve. That is why the optimum is where SMC meets the demand curve itself.</p>
+<figure class="graph"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+<line x1="102.0" y1="14" x2="102.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="158.0" y1="14" x2="158.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="214.0" y1="14" x2="214.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="270.0" y1="14" x2="270.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="326.0" y1="14" x2="326.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="382.0" y1="14" x2="382.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="219.0" x2="382" y2="219.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="178.0" x2="382" y2="178.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="137.0" x2="382" y2="137.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="96.0" x2="382" y2="96.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="55.0" x2="382" y2="55.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="382" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="158.0,96.0 214.0,55.0 214.0,137.0" fill="#d14" fill-opacity="0.35" stroke="none"/>
+<line x1="46" y1="260" x2="382" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="102.0" y1="260" x2="102.0" y2="264" stroke="#1d2430"/>
+<text x="102.0" y="275" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="158.0" y1="260" x2="158.0" y2="264" stroke="#1d2430"/>
+<text x="158.0" y="275" text-anchor="middle" fill="#1d2430">Q* = 4</text>
+<line x1="214.0" y1="260" x2="214.0" y2="264" stroke="#1d2430"/>
+<text x="214.0" y="275" text-anchor="middle" fill="#1d2430">Q1 = 6</text>
+<line x1="270.0" y1="260" x2="270.0" y2="264" stroke="#1d2430"/>
+<text x="270.0" y="275" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="326.0" y1="260" x2="326.0" y2="264" stroke="#1d2430"/>
+<text x="326.0" y="275" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="382.0" y1="260" x2="382.0" y2="264" stroke="#1d2430"/>
+<text x="382.0" y="275" text-anchor="middle" fill="#1d2430">12</text>
+<line x1="42" y1="219.0" x2="46" y2="219.0" stroke="#1d2430"/>
+<text x="39" y="223.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="178.0" x2="46" y2="178.0" stroke="#1d2430"/>
+<text x="39" y="182.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="137.0" x2="46" y2="137.0" stroke="#1d2430"/>
+<text x="39" y="141.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="96.0" x2="46" y2="96.0" stroke="#1d2430"/>
+<text x="39" y="100.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="55.0" x2="46" y2="55.0" stroke="#1d2430"/>
+<text x="39" y="59.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="214.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Gallons of gasoline (quantity)</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,14.0 382.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="306.4" y="235.4" fill="#1f5fbf" text-anchor="middle" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D = PMB = SMB</text>
+<polyline points="46.0,260.0 382.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="340.0" y="67.3" fill="#b8322a" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">S = PMC</text>
+<polyline points="46.0,178.0 270.0,14.0" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="230.8" y="30.4" fill="#d97706" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">SMC = PMC + 4</text>
+<line x1="102.0" y1="219.0" x2="102.0" y2="137.0" stroke="#111" stroke-width="3"/>
+<text x="109.0" y="184.1" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">EMC = $4</text>
+<polyline points="46,137.0 214.0,137.0 214.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,96.0 158.0,96.0 158.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="214.0" cy="137.0" r="3.4" fill="#1d2430"/>
+<circle cx="158.0" cy="96.0" r="3.4" fill="#1d2430"/>
+<circle cx="214.0" cy="55.0" r="3.4" fill="#1d2430"/>
+<text x="223.8" y="149.3" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">market (6, $6)</text>
+<text x="149.6" y="85.8" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">optimum (4, $8)</text>
+<text x="221.0" y="52.9" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">$10</text>
+<text x="201.4" y="96.0" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">DWL 4</text>
+</svg><figcaption>Demand P = 12 − Q, private marginal cost P = Q, and a constant external marginal cost of $4, so SMC = Q + 4. The market trades 6 at $6; the efficient quantity is 4 at $8. The deadweight loss is ½ × (6 − 4) × (10 − 6) = 4.</figcaption></figure>
+<p>Where is the deadweight loss? Every unit between Q* = 4 and Q1 = 6 costs society more (SMC) than anyone values it (demand). The loss on each such unit is the vertical gap between SMC and demand, and adding those gaps up gives a triangle with its vertex at the social optimum (4, $8) and its base standing on the line Q1 = 6, running from demand ($6) up to SMC ($10). Edwards described it as a triangle that "points toward the social optimum, like you normally would see." Moving to Q* means moving northwest along the demand curve: the true cost is higher, so the optimal quantity is lower and the price is higher.</p>
+<div class="key"><p>With a constant EMC, the deadweight loss of a negative externality is <code class="f">DWL = ½ × EMC × (Q1 − Q*)</code>. Here ½ × 4 × 2 = 4.</p></div>
+
+<h3>Positive externalities: the market underproduces</h3>
+<p>Now flu shots. Your shot protects you, which is why you would pay for it, and it also cuts the chance you spread flu to others. That extra benefit to other people is an external marginal benefit, so SMB sits above the demand curve (PMB). If nothing else costs society extra, supply is both PMC and SMC. The market stops at Q1, where demand meets supply, but at Q1 the social benefit of one more shot is still above its cost. Society wants more, up to Q*, where SMB crosses supply.</p>
+<figure class="graph"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+<line x1="94.0" y1="14" x2="94.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="166.0" y1="14" x2="166.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="214.0" y1="14" x2="214.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="286.0" y1="14" x2="286.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="334.0" y1="14" x2="334.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="382.0" y1="14" x2="382.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="224.9" x2="382" y2="224.9" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="189.7" x2="382" y2="189.7" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="154.6" x2="382" y2="154.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="119.4" x2="382" y2="119.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="84.3" x2="382" y2="84.3" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="49.1" x2="382" y2="49.1" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="382" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="166.0,101.9 214.0,137.0 166.0,172.1" fill="#d14" fill-opacity="0.35" stroke="none"/>
+<line x1="46" y1="260" x2="382" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="94.0" y1="260" x2="94.0" y2="264" stroke="#1d2430"/>
+<text x="94.0" y="275" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="166.0" y1="260" x2="166.0" y2="264" stroke="#1d2430"/>
+<text x="166.0" y="275" text-anchor="middle" fill="#1d2430">Q1 = 5</text>
+<line x1="214.0" y1="260" x2="214.0" y2="264" stroke="#1d2430"/>
+<text x="214.0" y="275" text-anchor="middle" fill="#1d2430">Q* = 7</text>
+<line x1="286.0" y1="260" x2="286.0" y2="264" stroke="#1d2430"/>
+<text x="286.0" y="275" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="334.0" y1="260" x2="334.0" y2="264" stroke="#1d2430"/>
+<text x="334.0" y="275" text-anchor="middle" fill="#1d2430">12</text>
+<line x1="382.0" y1="260" x2="382.0" y2="264" stroke="#1d2430"/>
+<text x="382.0" y="275" text-anchor="middle" fill="#1d2430">14</text>
+<line x1="42" y1="224.9" x2="46" y2="224.9" stroke="#1d2430"/>
+<text x="39" y="228.9" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="189.7" x2="46" y2="189.7" stroke="#1d2430"/>
+<text x="39" y="193.7" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="154.6" x2="46" y2="154.6" stroke="#1d2430"/>
+<text x="39" y="158.6" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="119.4" x2="46" y2="119.4" stroke="#1d2430"/>
+<text x="39" y="123.4" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="84.3" x2="46" y2="84.3" stroke="#1d2430"/>
+<text x="39" y="88.3" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="49.1" x2="46" y2="49.1" stroke="#1d2430"/>
+<text x="39" y="53.1" text-anchor="end" fill="#1d2430">12</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">14</text>
+<text x="214.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Flu shots (quantity)</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,84.3 286.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="293.2" y="244.2" fill="#1f5fbf" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D = PMB</text>
+<polyline points="46.0,14.0 382.0,260.0" fill="none" stroke="#0f8a5f" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="314.8" y="186.2" fill="#0f8a5f" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">SMB = PMB + 4</text>
+<polyline points="46.0,260.0 358.0,31.6" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="310.0" y="36.8" fill="#b8322a" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">S = PMC = SMC</text>
+<line x1="94.0" y1="119.4" x2="94.0" y2="49.1" stroke="#111" stroke-width="3"/>
+<text x="101.2" y="73.7" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">EMB = $4</text>
+<polyline points="46,172.1 166.0,172.1 166.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,137.0 214.0,137.0 214.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="166.0" cy="172.1" r="3.4" fill="#1d2430"/>
+<circle cx="214.0" cy="137.0" r="3.4" fill="#1d2430"/>
+<circle cx="166.0" cy="101.9" r="3.4" fill="#1d2430"/>
+<text x="173.2" y="186.2" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">market (5, $5)</text>
+<text x="223.6" y="130.0" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">optimum (7, $7)</text>
+<text x="158.8" y="96.6" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">$9</text>
+<text x="184.0" y="140.5" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">DWL 4</text>
+</svg><figcaption>Demand (PMB) P = 10 − Q, an external marginal benefit of $4 so SMB = 14 − Q, and supply P = Q. The market gives 5 shots; the efficient quantity is 7. The deadweight loss is ½ × (7 − 5) × (9 − 5) = 4.</figcaption></figure>
+<p>The deadweight loss triangle now sits between Q1 = 5 and Q* = 7, below SMB and above supply. These are shots that would be worth more to society ($9 at Q = 5, falling to $7 at Q = 7) than they cost to make, but the market does not produce them. The triangle points toward the social optimum again, this time to the right. In the vaccine case, willingness to pay is effectively higher once you count everyone, so the optimal quantity is higher.</p>
+<div class="tw"><table class="data">
+<thead><tr><th></th><th>Negative externality</th><th>Positive externality</th></tr></thead>
+<tbody>
+<tr><td>Which side</td><td>Cost (supply) side</td><td>Benefit (demand) side</td></tr>
+<tr><td>Gap</td><td>SMC above PMC by EMC</td><td>SMB above PMB by EMB</td></tr>
+<tr><td>Market result</td><td>Q1 greater than Q*: overproduce</td><td>Q1 less than Q*: underproduce</td></tr>
+<tr><td>DWL triangle</td><td>Between Q* and Q1, below SMC, above demand</td><td>Between Q1 and Q*, below SMB, above supply</td></tr>
+<tr><td>Pigouvian fix</td><td>Tax per unit = EMC at Q*</td><td>Subsidy per unit = EMB at Q*</td></tr>
+</tbody>
+</table></div>
+
+<h3>Accounting for surplus at any quantity</h3>
+<p>When there is an externality, total surplus has to include the people outside the market. The external cost at any quantity is the area between SMC and PMC up to that quantity; with a constant EMC it is just EMC × Q.</p>
+<div class="key"><p><code class="f">Total (social) surplus = CS + PS + tax revenue − external cost</code> (add external benefit instead, for a positive externality; subtract subsidy cost if there is one). The maximum possible total surplus is the area between demand and SMC from 0 to Q*. Deadweight loss = maximum total surplus − actual total surplus.</p></div>
+<p>Check this on the gasoline numbers. At the market quantity Q1 = 6 and price $6: CS = ½ × 6 × (12 − 6) = 18, PS = ½ × 6 × 6 = 18, external cost = 4 × 6 = 24, so total surplus = 18 + 18 − 24 = 12. The maximum, at Q* = 4, is the area between demand and SMC from 0 to 4, a triangle with base 4 and height 12 − 4 = 8, so ½ × 4 × 8 = 16. The difference, 16 − 12 = 4, is exactly the deadweight loss triangle. This "two routes to the same DWL" check catches arithmetic mistakes.</p>
+
+<h3>The optimal amount of pollution is usually not zero</h3>
+<p>This is F25 question 1(g), and it surprises people. The slide says that if pollution costs can be quantified, there is an optimal level of polluting that equates social marginal cost and social marginal benefit. Gasoline pollutes, but the first gallons (getting to work, ambulances, trucks delivering food) are worth far more to people than their full social cost, including the pollution. Banning gasoline would throw away all that surplus. The efficient quantity is where SMC = SMB, which is usually a positive, finite quantity. It would be zero only if SMC were above SMB even for the very first unit.</p>
+<div class="tip"><p>The answer key words to hit: the socially optimal quantity is typically nonzero and finite, at the intersection of social marginal cost and social marginal benefit (demand, willingness to pay). It could be zero, but there is no reason to expect that it must be.</p></div>
+
+<h3>Private fixes from Coase and Ostrom</h3>
+<p>The slides list three kinds of remedies: private solutions (negotiation and compensation, social sanctions, education), government regulation, and taxes and subsidies.</p>
+<p>Ronald Coase (Nobel Prize 1991) argued that if property rights are clearly defined, private negotiation will solve externalities. The people affected can bargain: the polluter pays the neighbors, or the neighbors pay the polluter to stop, until the efficient outcome is reached. The catch is that negotiation can be costly, so it helps to define property rights "in the right way." Edwards' gasoline example: if someone owned the air, they could say to every driver, you just degraded my air, and I am going to charge you for it. That would be a market solution, but it is extremely hard to set up for millions of drivers.</p>
+<p>Elinor Ostrom (Nobel Prize 2009) studied the "tragedy of the commons," where a shared resource (a pasture, a fishery) gets overused because no one owns it. The older theory said people in that situation were trapped, and that only government control or private ownership could fix it. She found many communities that manage shared resources well on their own, through trust and their own rules, especially when the users interact for a long time and have long-run interests in the resource. Her line was that a resource arrangement that works in practice can work in theory; his summary was that "people talk to each other." In the class poll he gave three ways out: property rights, strong government enforcing rules that act like property rights, or trust between agents who routinely interact. He noted that global climate change has none of the three.</p>
+
+<h3>Pigouvian taxes and subsidies</h3>
+<p>Named after Arthur Pigou, a corrective (Pigouvian) tax makes people internalize the externality by putting it into the price. For a negative externality, charge a per-unit tax equal to the amount others suffer from each unit. For a positive one, give a per-unit subsidy equal to the amount others gain. If the tax or subsidy is the right size, private incentives line up with social ones.</p>
+<div class="key"><p>The right size is the marginal external effect at the socially efficient point: <code class="f">Pigouvian tax = EMC at Q*</code> and <code class="f">Pigouvian subsidy = EMB at Q*</code>. If EMC is constant, the tax just equals EMC.</p></div>
+<p>Graphically, a tax equal to EMC lifts the supply curve from PMC up onto SMC. Sellers now act as if they face the full social cost, so the market lands on Q* and the deadweight loss disappears. A subsidy equal to EMB lifts the demand curve from PMB up to SMB, so the market lands on the larger Q*.</p>
+<figure class="graph"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+<line x1="102.0" y1="14" x2="102.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="158.0" y1="14" x2="158.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="214.0" y1="14" x2="214.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="270.0" y1="14" x2="270.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="326.0" y1="14" x2="326.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="382.0" y1="14" x2="382.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="219.0" x2="382" y2="219.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="178.0" x2="382" y2="178.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="137.0" x2="382" y2="137.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="96.0" x2="382" y2="96.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="55.0" x2="382" y2="55.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="382" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,178.0 158.0,178.0 158.0,96.0 46.0,96.0" fill="#e9b949" fill-opacity="0.45" stroke="none"/>
+<line x1="46" y1="260" x2="382" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="102.0" y1="260" x2="102.0" y2="264" stroke="#1d2430"/>
+<text x="102.0" y="275" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="158.0" y1="260" x2="158.0" y2="264" stroke="#1d2430"/>
+<text x="158.0" y="275" text-anchor="middle" fill="#1d2430">Q* = 4</text>
+<line x1="214.0" y1="260" x2="214.0" y2="264" stroke="#1d2430"/>
+<text x="214.0" y="275" text-anchor="middle" fill="#1d2430">Q1 = 6</text>
+<line x1="270.0" y1="260" x2="270.0" y2="264" stroke="#1d2430"/>
+<text x="270.0" y="275" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="326.0" y1="260" x2="326.0" y2="264" stroke="#1d2430"/>
+<text x="326.0" y="275" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="382.0" y1="260" x2="382.0" y2="264" stroke="#1d2430"/>
+<text x="382.0" y="275" text-anchor="middle" fill="#1d2430">12</text>
+<line x1="42" y1="219.0" x2="46" y2="219.0" stroke="#1d2430"/>
+<text x="39" y="223.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="178.0" x2="46" y2="178.0" stroke="#1d2430"/>
+<text x="39" y="182.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="137.0" x2="46" y2="137.0" stroke="#1d2430"/>
+<text x="39" y="141.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="96.0" x2="46" y2="96.0" stroke="#1d2430"/>
+<text x="39" y="100.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="55.0" x2="46" y2="55.0" stroke="#1d2430"/>
+<text x="39" y="59.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="214.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Gallons of gasoline (quantity)</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,14.0 382.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="306.4" y="235.4" fill="#1f5fbf" text-anchor="middle" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D = PMB = SMB</text>
+<polyline points="46.0,260.0 382.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<text x="340.0" y="67.3" fill="#b8322a" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">S = PMC</text>
+<polyline points="46.0,178.0 270.0,14.0" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="230.8" y="30.4" fill="#d97706" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">S + $4 tax = SMC</text>
+<polyline points="46,96.0 158.0,96.0 158.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,178.0 158.0,178.0 158.0,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="158.0" y1="178.0" x2="158.0" y2="96.0" stroke="#111" stroke-width="3"/>
+<circle cx="158.0" cy="96.0" r="3.4" fill="#1d2430"/>
+<circle cx="158.0" cy="178.0" r="3.4" fill="#1d2430"/>
+<text x="167.8" y="87.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">buyers pay $8</text>
+<text x="167.8" y="194.4" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">sellers keep $4</text>
+<text x="121.6" y="149.3" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700">tax revenue</text>
+<text x="121.6" y="167.8" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700">$4 × 4 = $16</text>
+</svg><figcaption>A $4 per-unit tax shifts supply up from PMC to PMC + $4, which is exactly SMC. The market now trades Q* = 4. Buyers pay $8, sellers keep $4, and the government collects $4 × 4 = $16.</figcaption></figure>
+<p>Tax revenue is the tax times the new quantity: $4 × 4 = $16. Notice that with a constant EMC, the revenue ($16) equals the external cost of the 4 units still produced (4 × $4 = $16). That is a handy check, but it only holds when EMC is constant. The tax does not make the pollution disappear; it cuts quantity back to the point where the remaining units are worth their full social cost.</p>
+<p>Why "at Q*" matters: if the external cost per unit grows as quantity grows, EMC at the market quantity Q1 is bigger than EMC at Q*. Setting the tax at the Q1 value overshoots and cuts output below Q*. Worked example 5 shows this with numbers.</p>
+
+<h3>Taxes, regulation, and permits in practice</h3>
+<ul>
+<li>U.S. gas taxes are earmarked for road maintenance, so they address the wear-and-tear externality only, not global warming.</li>
+<li>Congestion pricing: some cities charge cars to enter crowded areas, a Pigouvian tax on the congestion each extra car imposes on everyone else. London started at £5 a day in 2003 and now charges £15. New York has charged $9 a day for Manhattan south of 61st Street since 2025.</li>
+<li>London evidence (Leape 2006): after the charge started in March 2003, time spent crawling at 0 to 10 km per hour in the zone fell by about a third, which Leape says is about 10 minutes saved per trip. Edwards' back-of-envelope: with an hourly wage of maybe £12 in 2000, 10 minutes is worth about £2, against a £5 fee.</li>
+<li>New York evidence (Cook and coauthors, NBER working paper 33584): weekday peak-hour speeds in the business district, compared with a set of control cities, hovered around zero difference through late 2024 and then jumped to roughly 10 to 20 percent faster after pricing started in January 2025. Fewer cars entering means less congestion for the ones that remain.</li>
+<li>R&amp;D tax credits are a subsidy to encourage innovation, which has positive spillovers, but not tied explicitly to the size of the positive externality.</li>
+<li>Regulation is the most common response. Harmful products and actions are forbidden (harmful pollutants, dangerous goods, littering, speeding), and the penalty starts with a fine. A fine is economically equivalent to a tax but psychologically and socially very different. Emission limits like California's smog check are another kind. The problem is fairness when technologies vary: cutting pollution is cheap in some sectors and expensive in others. Electric cars exist but electric planes do not, so a uniform CO2 allowance could kill the high-value aviation industry.</li>
+<li>Cap and trade: the government gives emitters permits for a fixed total amount of pollution, and they can trade them. Firms that can cut pollution cheaply cut more and sell their extra permits to firms for which cutting is expensive, so the cuts happen where they cost least. Everyone faces the same price of emissions. If the total number of permits is set so that the permit price equals the social marginal cost of the pollution, the system is efficient. It has been used for transitions: sulfur dioxide (acid rain) and CFCs (which deplete the ozone layer) were costly to ban overnight because substitutes take time, so they were phased out with shrinking allowances.</li>
+</ul>
+
+<h3>Climate change and the carbon tax</h3>
+<p>CO2 is a textbook negative externality: whoever burns fossil fuel gets the benefit, while the damage is spread around the world and into the future. The slide on U.S. CO2 emissions (EPA) shows electricity at 37 percent and transportation at 31 percent, followed by industry (15 percent), residential and commercial (10 percent), and other (6 percent). The costs vary a lot by place and level of development: extreme weather makes places less livable (sea rise, heatwaves, droughts, wildfire smoke), possibly forcing mass migration; agriculture gets disrupted; and biodiversity is lost. The slide ties food to elasticity: demand for food is inelastic in the short run, so if farm output falls, prices spike, which can mean famine in low-income countries.</p>
+<p>The economists' solution is a carbon tax equal to the marginal damage of CO2 (the slide cites a 2019 letter from economists in the Wall Street Journal). The hard part is measuring that marginal damage, because most of it happens in the future, so the answer depends on how much you discount the future. If people are impatient and discount the future heavily, future damage counts for little today, the estimated damage cost is small, and the optimal tax is small; on that view it is "desirable to let global warming happen." If the future is not discounted much, the optimal carbon tax is big, and unpopular.</p>
+</section>
+
+<section id="examples">
+<h2>Worked examples</h2>
+
+<div class="example"><h4>Example: negative externality, from graph to deadweight loss</h4>
+<p>Demand (PMB = SMB) is P = 12 − Q. Private marginal cost (supply) is P = Q. Each unit causes $4 of pollution damage to others. Find the market outcome, the efficient outcome, the deadweight loss, and total surplus at each.</p>
+<ol class="steps">
+<li>Market: set demand equal to PMC. 12 − Q = Q, so Q1 = 6 and P1 = $6.</li>
+<li>Social marginal cost: SMC = PMC + EMC = Q + 4.</li>
+<li>Efficient quantity: set demand equal to SMC. 12 − Q = Q + 4, so Q* = 4, where the price would be $8.</li>
+<li>At Q1 = 6, SMC = 10 while demand is only 6, so the last units cost society more than they are worth. DWL = ½ × (6 − 4) × (10 − 6) = 4.</li>
+<li>Total surplus at Q1: CS 18 + PS 18 − external cost 24 = 12. Maximum total surplus at Q* = ½ × 4 × (12 − 4) = 16. The gap is 16 − 12 = 4, matching step 4.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> The market produces 6 at $6, but the efficient quantity is 4. The market overproduces by 2 units, and the deadweight loss is 4.</p></div>
+
+<div class="example"><h4>Example: the Pigouvian tax that fixes it</h4>
+<p>Same market. What per-unit tax restores efficiency, and what happens to prices, revenue, and surplus?</p>
+<ol class="steps">
+<li>The external marginal cost is a constant $4, so the tax is $4 per unit (EMC at Q*).</li>
+<li>Sellers now need PMC + 4 = Q + 4 to supply, which is the SMC line. Set 12 − Q = Q + 4, so Q = 4 = Q*.</li>
+<li>Buyers pay the demand price at Q = 4: 12 − 4 = $8. Sellers keep $8 − $4 = $4.</li>
+<li>Tax revenue = $4 × 4 = $16.</li>
+<li>Surplus: CS = ½ × 4 × (12 − 8) = 8. PS = ½ × 4 × 4 = 8. External cost = 4 × 4 = 16. Total = 8 + 8 + 16 − 16 = 16, the maximum. DWL = 0.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> A $4 tax moves the market to Q* = 4, buyers pay $8, sellers keep $4, revenue is $16, and the deadweight loss is gone.</p></div>
+
+<div class="example"><h4>Example: Problem Set 2, question 3(d), pollution with flat supply</h4>
+<p>Domestic oil: demand P = 5 − Q, supply MC = 1 (perfectly elastic, horizontal). Production causes pollution costing $2 per unit. (The problem calls this the marginal social cost of $2, but it is the external part; social marginal cost is 1 + 2 = 3.) Find the equilibrium, CS, PS, total external cost, and DWL without a tax, and the tax that restores efficiency.</p>
+<figure class="graph"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+<line x1="113.2" y1="14" x2="113.2" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="180.4" y1="14" x2="180.4" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="247.6" y1="14" x2="247.6" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="314.8" y1="14" x2="314.8" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="382.0" y1="14" x2="382.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="210.8" x2="382" y2="210.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="161.6" x2="382" y2="161.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="112.4" x2="382" y2="112.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="63.2" x2="382" y2="63.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="382" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,14.0 46.0,210.8 314.8,210.8" fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+<polygon points="180.4,112.4 314.8,112.4 314.8,210.8" fill="#d14" fill-opacity="0.35" stroke="none"/>
+<line x1="46" y1="260" x2="382" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="113.2" y1="260" x2="113.2" y2="264" stroke="#1d2430"/>
+<text x="113.2" y="275" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="180.4" y1="260" x2="180.4" y2="264" stroke="#1d2430"/>
+<text x="180.4" y="275" text-anchor="middle" fill="#1d2430">Q* = 2</text>
+<line x1="247.6" y1="260" x2="247.6" y2="264" stroke="#1d2430"/>
+<text x="247.6" y="275" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="314.8" y1="260" x2="314.8" y2="264" stroke="#1d2430"/>
+<text x="314.8" y="275" text-anchor="middle" fill="#1d2430">Q1 = 4</text>
+<line x1="382.0" y1="260" x2="382.0" y2="264" stroke="#1d2430"/>
+<text x="382.0" y="275" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="42" y1="210.8" x2="46" y2="210.8" stroke="#1d2430"/>
+<text x="39" y="214.8" text-anchor="end" fill="#1d2430">1</text>
+<line x1="42" y1="161.6" x2="46" y2="161.6" stroke="#1d2430"/>
+<text x="39" y="165.6" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="112.4" x2="46" y2="112.4" stroke="#1d2430"/>
+<text x="39" y="116.4" text-anchor="end" fill="#1d2430">3</text>
+<line x1="42" y1="63.2" x2="46" y2="63.2" stroke="#1d2430"/>
+<text x="39" y="67.2" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">5</text>
+<text x="214.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Oil (quantity)</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,14.0 382.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="96.4" y="36.1" fill="#1f5fbf" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D</text>
+<polyline points="46.0,210.8 382.0,210.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="378.6" y="201.9" fill="#b8322a" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">S = PMC = $1</text>
+<polyline points="46.0,112.4 382.0,112.4" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="378.6" y="103.5" fill="#d97706" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">SMC = 1 + 2 = $3</text>
+<line x1="66.2" y1="210.8" x2="66.2" y2="112.4" stroke="#111" stroke-width="3"/>
+<text x="72.9" y="146.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">EMC $2</text>
+<polyline points="46,112.4 180.4,112.4 180.4,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,210.8 314.8,210.8 314.8,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="180.4" cy="112.4" r="3.4" fill="#1d2430"/>
+<circle cx="314.8" cy="210.8" r="3.4" fill="#1d2430"/>
+<text x="113.2" y="183.7" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700">CS 8</text>
+<text x="284.6" y="139.5" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">DWL 2</text>
+</svg><figcaption>Problem Set 2 question 3(d). The pollution shifts social marginal cost up by a level $2, from $1 to $3. The untaxed market stays at Q = 4 and P = $1; the efficient quantity is 2. Consumer surplus is 8 and the deadweight loss triangle is 2.</figcaption></figure>
+<ol class="steps">
+<li>Without a tax, sellers only see their private MC of $1, so the market stays where demand meets MC: 5 − Q = 1, so Q = 4 and P = $1, the same as with no pollution.</li>
+<li>Producer surplus is zero: supply is flat at the price, so there is no area between price and supply.</li>
+<li>Consumer surplus is the triangle under demand and above $1: ½ × 4 × 4 = 8.</li>
+<li>Total external cost = $2 per unit × 4 units = $8.</li>
+<li>SMC = 1 + 2 = 3. The efficient quantity solves 5 − Q = 3, so Q* = 2.</li>
+<li>DWL is the triangle between SMC and demand from Q = 2 to Q = 4: ½ × 2 × 2 = 2. At Q = 4, social marginal cost ($3) is above willingness to pay ($1).</li>
+<li>Check: total surplus = 8 + 0 − 8 = 0. Maximum = ½ × 2 × (5 − 3) = 2. Gap = 2.</li>
+<li>The tax that restores efficiency is $2 per unit, the external marginal cost. With it, buyers pay $3, Q = 2, CS = 2, PS = 0, revenue = $4, external cost = $4, total surplus = 2.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> Equilibrium (Q, P) = (4, $1); CS = 8, PS = 0, external cost = $8, DWL = 2; a $2 per-unit tax restores efficiency.</p></div>
+
+<div class="example"><h4>Example: Problem Set 2, question 3(f), monopoly plus pollution</h4>
+<p>Same demand, same $1 private MC, same $2 pollution cost, but now one monopolist sells all the oil. Remember the monopolist only cares about its private marginal cost. Find price, quantity, CS, PS, external cost, and DWL. Then: was it good that Standard Oil had a monopoly from 1890 to 1910?</p>
+<figure class="graph"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+<line x1="113.2" y1="14" x2="113.2" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="180.4" y1="14" x2="180.4" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="247.6" y1="14" x2="247.6" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="314.8" y1="14" x2="314.8" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="382.0" y1="14" x2="382.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="210.8" x2="382" y2="210.8" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="161.6" x2="382" y2="161.6" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="112.4" x2="382" y2="112.4" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="63.2" x2="382" y2="63.2" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="382" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,14.0 46.0,112.4 180.4,112.4" fill="#1f5fbf" fill-opacity="0.15" stroke="none"/>
+<polygon points="46.0,112.4 180.4,112.4 180.4,210.8 46.0,210.8" fill="#e9b949" fill-opacity="0.45" stroke="none"/>
+<line x1="46" y1="260" x2="382" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="113.2" y1="260" x2="113.2" y2="264" stroke="#1d2430"/>
+<text x="113.2" y="275" text-anchor="middle" fill="#1d2430">1</text>
+<line x1="180.4" y1="260" x2="180.4" y2="264" stroke="#1d2430"/>
+<text x="180.4" y="275" text-anchor="middle" fill="#1d2430">Q = 2</text>
+<line x1="247.6" y1="260" x2="247.6" y2="264" stroke="#1d2430"/>
+<text x="247.6" y="275" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="314.8" y1="260" x2="314.8" y2="264" stroke="#1d2430"/>
+<text x="314.8" y="275" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="382.0" y1="260" x2="382.0" y2="264" stroke="#1d2430"/>
+<text x="382.0" y="275" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="42" y1="210.8" x2="46" y2="210.8" stroke="#1d2430"/>
+<text x="39" y="214.8" text-anchor="end" fill="#1d2430">1</text>
+<line x1="42" y1="161.6" x2="46" y2="161.6" stroke="#1d2430"/>
+<text x="39" y="165.6" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="112.4" x2="46" y2="112.4" stroke="#1d2430"/>
+<text x="39" y="116.4" text-anchor="end" fill="#1d2430">3</text>
+<line x1="42" y1="63.2" x2="46" y2="63.2" stroke="#1d2430"/>
+<text x="39" y="67.2" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">5</text>
+<text x="214.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Oil (quantity)</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,14.0 382.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="96.4" y="36.1" fill="#1f5fbf" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D</text>
+<polyline points="46.0,14.0 214.0,260.0" fill="none" stroke="#7a3fb0" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="217.4" y="247.7" fill="#7a3fb0" text-anchor="start" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">MR = 5 − 2Q</text>
+<polyline points="46.0,210.8 382.0,210.8" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="378.6" y="201.9" fill="#b8322a" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">PMC = $1</text>
+<polyline points="46.0,112.4 382.0,112.4" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="378.6" y="103.5" fill="#d97706" text-anchor="end" font-size="11" font-weight="700" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">SMC = $3</text>
+<polyline points="46,112.4 180.4,112.4 180.4,260" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="180.4" cy="112.4" r="3.4" fill="#1d2430"/>
+<circle cx="180.4" cy="210.8" r="3.4" fill="#1d2430"/>
+<text x="190.5" y="97.6" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">P = $3: SMC meets D here</text>
+<text x="187.1" y="198.5" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">MR = MC</text>
+<text x="83.0" y="90.3" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700">CS 2</text>
+<text x="113.2" y="151.8" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="700">profit $4</text>
+<text x="113.2" y="183.7" fill="#1d2430" text-anchor="middle" font-size="9" font-weight="600">= external cost $4</text>
+</svg><figcaption>Problem Set 2 question 3(f). The monopolist sets MR = 5 − 2Q equal to its private MC of $1, giving Q = 2, and charges $3 off the demand curve. That happens to be exactly where SMC = $3 crosses demand, so the outcome is efficient. Profit and external cost are both $4.</figcaption></figure>
+<ol class="steps">
+<li>A linear demand P = 5 − Q has MR = 5 − 2Q, twice as steep with the same intercept.</li>
+<li>The monopolist sets MR = private MC: 5 − 2Q = 1, so Q = 2. It charges what demand will bear at Q = 2: P = 5 − 2 = $3.</li>
+<li>Social marginal cost is 1 + 2 = 3, and demand crosses SMC at Q = 2 as well. So the monopoly quantity equals the efficient quantity. The key calls this efficient "seemingly through magic," a lucky coincidence, but possible.</li>
+<li>CS = ½ × 2 × (5 − 3) = 2.</li>
+<li>Monopoly profit = (P − MC) × Q = (3 − 1) × 2 = $4. With zero fixed costs and a flat MC, this profit is the producer surplus. (The key says "producer surplus is still zero" in 3(e) but then says the monopolist "profits $4 as before" and counts the $4 in total surplus. Use $4.)</li>
+<li>External cost = $2 × 2 units = $4.</li>
+<li>Net social surplus = CS 2 + profit 4 − external cost 4 = 2. That equals the maximum possible (½ × 2 × 2 = 2), so DWL = 0.</li>
+<li>Standard Oil: the key does not give an official answer. A strong answer says no, you cannot conclude it was good. The match happened only because the monopoly's output cut ($2 between price and MC) was exactly the size of the pollution cost ($2). With a different external cost the monopoly would produce the wrong amount, and the monopolist cut output to raise profit, not to reduce pollution. A Pigouvian tax targets the externality directly without handing a firm market power.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> Q = 2, P = $3, CS = 2, monopoly profit (producer surplus) = $4, external cost = $4, net social surplus = 2, DWL = 0. The efficiency is a coincidence, so it does not show that the Standard Oil monopoly was good.</p></div>
+
+<div class="example"><h4>Example: why the tax is EMC at Q*, not at the market quantity</h4>
+<p>Demand P = 12 − Q, private MC P = Q, but now the external cost per unit rises with output: EMC = Q (think of pollution that does more harm as the air gets dirtier). What tax restores efficiency?</p>
+<ol class="steps">
+<li>SMC = PMC + EMC = Q + Q = 2Q.</li>
+<li>Market: 12 − Q = Q, so Q1 = 6. At Q1, EMC = 6.</li>
+<li>Efficient: 12 − Q = 2Q, so Q* = 4. At Q*, EMC = 4.</li>
+<li>Try a $4 tax: sellers need Q + 4, so 12 − Q = Q + 4 gives Q = 4 = Q*. It works.</li>
+<li>Try a $6 tax (EMC at Q1): 12 − Q = Q + 6 gives Q = 3, below Q*. It overshoots and creates a new deadweight loss.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> The Pigouvian tax is $4, the external marginal cost evaluated at the efficient quantity Q* = 4.</p></div>
+</section>
+
+<section id="mistakes">
+<h2>Common mistakes</h2>
+<div class="mistake"><p><strong>Mistake:</strong> Saying the optimal amount of pollution is zero.</p><p><strong>Correct:</strong> The optimal quantity is where social marginal cost equals social marginal benefit, which is usually positive and finite. It could be zero, but there is no reason it must be (F25 question 1(g)).</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Shifting the demand curve for pollution or the supply curve for vaccines.</p><p><strong>Correct:</strong> A negative externality is a cost-side story: draw SMC above PMC (supply). A positive externality is a benefit-side story: draw SMB above PMB (demand).</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Drawing the deadweight loss triangle under the demand curve and above PMC, like consumer or producer surplus.</p><p><strong>Correct:</strong> For a negative externality the triangle lies between Q* and Q1, below SMC and above demand, with its point at the social optimum. For a positive externality it lies between Q1 and Q*, below SMB and above supply.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Thinking the market moves to SMC on its own once people learn about the pollution (on Problem Set 2 question 3(d), putting the equilibrium at Q = 2).</p><p><strong>Correct:</strong> Without a tax or other policy, buyers and sellers still only see private costs, so the market stays at PMB = PMC: (4, $1). Q* is where society would like to be, not where the market goes.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Reading "marginal social cost equals $2 per unit" on Problem Set 2 as SMC = 2.</p><p><strong>Correct:</strong> The $2 is the external cost added on top of the $1 private cost, so SMC = 1 + 2 = 3. Always build SMC = PMC + EMC.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Forgetting the external cost when computing total surplus.</p><p><strong>Correct:</strong> Total surplus = CS + PS + tax revenue − external cost. On Problem Set 2 question 3(d) the market has CS 8 and PS 0, but total surplus is 8 − 8 = 0, not 8.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Setting the Pigouvian tax equal to the external cost at the market quantity, or equal to the total external cost.</p><p><strong>Correct:</strong> The tax is per unit and equals the external marginal cost at the efficient quantity Q*. When EMC is constant, that is just EMC.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Concluding from Problem Set 2 question 3(f) that monopolies are good when there is pollution.</p><p><strong>Correct:</strong> The monopoly was efficient only because its output cut happened to match the $2 external cost exactly, a lucky coincidence. With other numbers it is not efficient.</p></div>
+</section>
+
+<section id="said">
+<h2>What Edwards said in class</h2>
+<blockquote class="said"><p>"Externalities are things that other people do that affect you that you didn't do."</p><cite>Class 11</cite><p class="why">Why it matters: this is the plain-language definition to open any "what is an externality" answer with.</p></blockquote>
+<blockquote class="said"><p>Social costs and benefits are "things that the market does not naturally absorb"; it is not socialism, it is costs or benefits felt more broadly.</p><cite>Class 11</cite><p class="why">Why it matters: "social" in SMC and SMB means everyone, including people outside the market.</p></blockquote>
+<blockquote class="said"><p>With a negative externality, the market produces where private marginal cost equals private marginal benefit, but "we'd be better off if the market produced and consumed less, where the social marginal cost is equal to the social marginal benefit."</p><cite>Class 11</cite><p class="why">Why it matters: this is the full-credit sentence for the market outcome versus the efficient outcome.</p></blockquote>
+<blockquote class="said"><p>A positive externality is "a story about the marginal benefit, the demand curve," and a negative one is a story about "the marginal cost, the supply curve."</p><cite>Class 11</cite><p class="why">Why it matters: it tells you which curve to draw a second, social version of.</p></blockquote>
+<blockquote class="said"><p>The deadweight loss triangle "points toward the social optimum, like you normally would see."</p><cite>Class 11</cite><p class="why">Why it matters: use it to place the triangle correctly on a graph question.</p></blockquote>
+<blockquote class="said"><p>Exactly how big the gap between social and private marginal cost is "would be the question"; in practice it comes from some kind of model-driven estimate.</p><cite>Class 11</cite><p class="why">Why it matters: it explains why carbon tax estimates vary and why the discounting question matters.</p></blockquote>
+<blockquote class="said"><p>Ostrom's trust idea "is not likely to be on the exam unless I flesh it out relatively well."</p><cite>Class 11</cite><p class="why">Why it matters: know Coase and Ostrom in a sentence each, but spend your time on graphs and the Pigouvian tax.</p></blockquote>
+</section>
+
+<section id="practice">
+<h2>Practice questions</h2><div class="tools"><button class="btn" id="reveal-all">Show all answers</button></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> From the perspective of ECON 2, can there ever be an optimal level of polluting above zero, or is the optimal level always zero? Refer to social marginal cost and social marginal benefit.</p><details><summary>Show answer</summary><div class="a"><p>Yes, there can be. If pollution raises social marginal cost by a quantifiable amount, the socially optimal quantity is where social marginal cost equals social marginal benefit (demand, or willingness to pay). That intersection is typically at a positive, finite quantity, because the first units are worth more to buyers than their full social cost, including the pollution. It could be zero if SMC were above SMB for every unit, but there is no reason it must be.</p><p class="credit"><strong>Full credit:</strong> Says the optimum is where SMC = SMB and that this is usually a nonzero quantity (possibly zero, but not necessarily).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> Late-night food trucks near campus. Demand is P = 8 − Q (Q in hundreds of meals per night, P in dollars). Private marginal cost is flat at $2. Each meal leaves $2 of noise and litter costs on neighbors. Find the market quantity, the efficient quantity, the deadweight loss, and total surplus at the market quantity. What tax fixes it, and how much revenue does it raise?</p><details><summary>Show answer</summary><div class="a"><p>Market: 8 − Q = 2, so Q1 = 6 at P = $2. SMC = 2 + 2 = 4, so the efficient quantity solves 8 − Q = 4: Q* = 4. DWL = ½ × (6 − 4) × (4 − 2) = 2, or $200 per night. At Q1: CS = ½ × 6 × 6 = 18, PS = 0 (flat supply), external cost = 2 × 6 = 12, so total surplus = 18 + 0 − 12 = 6. The maximum, at Q* = 4, is ½ × 4 × (8 − 4) = 8; the gap of 2 is the DWL. A $2 per-meal tax lifts supply to SMC, so Q = 4 and buyers pay $4. Revenue = $2 × 4 = 8, or $800 per night.</p><p class="credit"><strong>Full credit:</strong> Q1 = 6, Q* = 4, DWL = 2, total surplus 6 at Q1 (subtracting the external cost), a $2 per-unit tax, revenue 8 (in hundreds of dollars).</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">3 points</span> Flu shots. Demand (private marginal benefit) is P = 30 − Q, where Q is thousands of shots. Marginal cost is flat at $10. Each shot gives $10 of benefit to other people by reducing spread. Draw or describe the graph, find Q1, Q*, and the deadweight loss, and name the policy that fixes it and its cost.</p><details><summary>Show answer</summary><div class="a"><p>Market: 30 − Q = 10, so Q1 = 20 thousand. SMB = PMB + EMB = 40 − Q, so the efficient quantity solves 40 − Q = 10: Q* = 30 thousand. The market underproduces. On the graph, SMB sits $10 above demand; the DWL triangle lies between Q = 20 and Q = 30, below SMB and above MC, pointing to Q*. DWL = ½ × 10 × 10 = 50, or $50,000. The fix is a $10 per-shot subsidy (EMB at Q*), which lifts demand to SMB. Cost = $10 × 30 thousand = $300,000.</p><p class="credit"><strong>Full credit:</strong> SMB above demand (not a supply shift), Q1 = 20 thousand, Q* = 30 thousand, DWL $50,000, a $10 per-unit subsidy.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> A new data center hums all night and strains the local power grid. Is this a positive or negative externality, and which curve gets a social version that differs from the private one? What happens to the market quantity relative to the efficient one?</p><details><summary>Show answer</summary><div class="a"><p>It is a negative externality: the noise and grid strain are costs borne by nearby residents who are not part of the market for data center services. It is a cost-side story, so social marginal cost lies above private marginal cost (supply), by the external marginal cost. The market produces where PMB = PMC, which is more than the efficient quantity where SMB = SMC.</p><p class="credit"><strong>Full credit:</strong> Negative; SMC above PMC (supply side); market overproduces relative to Q*.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Briefly explain why the Pigouvian tax should equal the external marginal cost at the efficient quantity, rather than at the quantity the market currently produces.</p><details><summary>Show answer</summary><div class="a"><p>The goal is for the market to land on Q*, where SMB = SMC. A tax equal to EMC at Q* makes the private cost of the last unit equal its social cost exactly at Q*, so buyers and sellers stop there. If EMC rises with quantity, EMC at the current (larger) market quantity is bigger, so a tax set there would push output below Q* and create a new deadweight loss. If EMC is constant, the two are the same number.</p><p class="credit"><strong>Full credit:</strong> Tax = EMC at Q* makes private incentives match social ones at the efficient point; a tax based on the higher EMC at the market quantity overshoots.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">3 points</span> Return to Problem Set 2 question 3: demand P = 5 − Q, private MC = $1, one monopolist. Now suppose the pollution damage is $1 per unit instead of $2. Is the monopoly outcome still efficient? Find the efficient quantity and the deadweight loss.</p><details><summary>Show answer</summary><div class="a"><p>The monopolist still sets MR = 5 − 2Q equal to its private MC of $1, so Q = 2 and P = $3. But SMC is now 1 + 1 = 2, and demand meets SMC where 5 − Q = 2, so Q* = 3. The monopoly now produces too little. DWL is the triangle between demand and SMC from Q = 2 to Q = 3: ½ × 1 × (3 − 2) = 0.5. Check: total surplus = CS 2 + profit 4 − external cost 2 = 4, versus a maximum of ½ × 3 × 3 = 4.5. The 3(f) result was a coincidence that depended on the external cost being exactly $2.</p><p class="credit"><strong>Full credit:</strong> Q = 2, P = $3, Q* = 3, DWL = 0.5, and a sentence that the earlier efficiency was a coincidence.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> A neighbor keeps beehives with no water source, and the bees drink from the swimming pool of the house next door, stinging guests. Using the Coase theorem, explain how this could be solved without the government.</p><details><summary>Show answer</summary><div class="a"><p>Coase says that if property rights are clearly defined and negotiation is not too costly, the two neighbors can bargain to the efficient outcome. If the pool owner has the right to a bee-free pool, the beekeeper can pay compensation or install a water source for the bees; if the beekeeper has the right to keep bees, the pool owner can pay the beekeeper to provide water or move hives. Either way they reach the solution worth the most to the two of them. It works because only two parties are involved, which keeps bargaining cheap.</p><p class="credit"><strong>Full credit:</strong> Clear property rights plus private negotiation or compensation solves the externality; mentions that low bargaining costs matter.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Why might cap and trade be more efficient than requiring every firm to cut emissions by the same amount?</p><details><summary>Show answer</summary><div class="a"><p>Cutting pollution is cheap for some firms and expensive for others (electric cars exist but electric planes do not). With tradable permits, firms that can cut cheaply cut more and sell their extra permits to firms for which cutting is expensive. Everyone faces the same price of emissions, so the total cut is achieved at the lowest cost. If the cap is set so the permit price equals the social marginal cost of pollution, the outcome is efficient. A uniform requirement ignores those cost differences and could shut down high-value industries like aviation.</p><p class="credit"><strong>Full credit:</strong> Same permit price for all; reductions happen where they are cheapest; uniform rules ignore different abatement costs.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Economists propose a carbon tax equal to the marginal damage of CO2. Briefly explain why two economists could recommend very different tax levels.</p><details><summary>Show answer</summary><div class="a"><p>Most of the damage from CO2 happens in the future, so its value today depends on how much the future is discounted. An economist who discounts heavily (treating people as impatient) counts future damage as small, so the marginal damage, and the optimal tax, is small. One who discounts little counts future damage nearly fully, so the optimal carbon tax is large, and unpopular. The marginal damage is also simply hard to estimate.</p><p class="credit"><strong>Full credit:</strong> Damage is mostly in the future; heavy discounting means a small tax, little discounting means a big tax.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> London's congestion charge began at £5 per day in 2003. Using what the class slides reported, what externality does the charge target, and what is the evidence that it worked?</p><details><summary>Show answer</summary><div class="a"><p>Each car entering central London slows down every other car, a negative externality the driver does not pay for. The charge is a Pigouvian-style tax that makes drivers face part of that cost, so fewer low-value trips are made. After it started, time spent crawling at 0 to 10 km per hour fell by about a third, roughly 10 minutes saved per trip, which at a wage of about £12 an hour in 2000 is worth around £2 per trip. New York's 2025 charge shows a similar jump in peak-hour speeds relative to comparison cities.</p><p class="credit"><strong>Full credit:</strong> Names congestion as the negative externality and cites faster traffic (time in slow traffic down about a third) after the charge.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> The slides say a fine is "economically equivalent to a tax." In what sense is that true, and how is it different?</p><details><summary>Show answer</summary><div class="a"><p>Both add a cost to the harmful action, so in the model both raise the private cost toward the social cost and reduce the quantity of the action. The difference is psychological and social: a fine says the action is forbidden and wrong, while a tax says you may do it if you pay. People may respond to the stigma of breaking a rule differently from how they respond to a price.</p><p class="credit"><strong>Full credit:</strong> Both raise the cost of the activity; a fine signals the act is prohibited, which is socially and psychologically different from paying a price.</p></div></details></div>
+</section>
+
+<section id="summary">
+<h2>One-minute review</h2>
+<ul>
+<li>Externality: a cost or benefit that lands on people outside the market; the price leaves it out.</li>
+<li>SMC = PMC + EMC; SMB = PMB + EMB. Market: PMB = PMC. Efficient Q*: SMB = SMC.</li>
+<li>Negative externality: supply side, SMC above PMC, market overproduces. Positive: demand side, SMB above PMB, market underproduces.</li>
+<li>DWL triangle lies between Q1 and Q*, between the social curve and the other curve, pointing at the social optimum. With constant EMC, DWL = ½ × EMC × (Q1 − Q*).</li>
+<li>Total surplus = CS + PS + tax revenue − external cost. Max total surplus is the area between demand and SMC up to Q*.</li>
+<li>Optimal pollution is usually not zero: it is where SMC = SMB (F25 question 1(g)).</li>
+<li>Pigouvian tax = EMC at Q*; subsidy = EMB at Q*. The tax lifts supply onto SMC. Revenue = tax × Q*.</li>
+<li>Problem Set 2 question 3(d): market (4, $1), CS 8, PS 0, external cost 8, Q* = 2, DWL 2, $2 tax. Question 3(f): monopoly Q = 2, P = $3, efficient by coincidence, profit 4, external cost 4, net surplus 2.</li>
+<li>Coase: clear property rights plus cheap bargaining. Ostrom: trust and long-run cooperation (only if the exam explains it). Cap and trade: same permit price for everyone; set the cap so price = social MC.</li>
+<li>Carbon tax = marginal damage of CO2; heavy discounting of the future means a small tax, little discounting means a big one.</li>
+</ul>
+</section>
+<div class="donebar"><button class="btn primary" id="mark-done" data-u="10-externalities">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="09-monopoly.html"><small>Previous</small>Monopoly</a><a href="11-past-exam.html" style="text-align:right"><small>Next</small>The Fall 2025 midterm, walked through</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#exam">How it shows up on the exam</a><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#said">What Edwards said in class</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>

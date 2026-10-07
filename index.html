@@ -1,65 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ECON 2 Midterm Kit</title>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-/* One centered column: title, two document cards, a short list of outside practice */
-:root{--bg:#f6f7f9;--card:#ffffff;--ink:#151b26;--mute:#596273;--rule:#d9dde4;--accent:#0b4f7c;--gold:#f1c64a;
---display:"Fira Sans Condensed","Arial Narrow",Arial,sans-serif;--body:"Fira Sans",Arial,sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141b;--card:#171d27;--ink:#e8ebf0;--mute:#a2abb9;--rule:#2b3341;--accent:#7cc0ea;--gold:#d9ad35;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#10141b;--card:#171d27;--ink:#e8ebf0;--mute:#a2abb9;--rule:#2b3341;--accent:#7cc0ea;--gold:#d9ad35;color-scheme:dark}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5;padding-inline:16px;padding-block:40px 64px}
-main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-.eyebrow{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--mute)}
-h1{font-family:var(--display);font-size:clamp(34px,7vw,52px);line-height:1;margin:6px 0 10px;letter-spacing:-.01em;text-wrap:balance}
-h1 span{background:linear-gradient(transparent 62%,var(--gold) 62%)}
-p{margin:0}
-.lede{color:var(--mute);max-width:60ch}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.card h2{font-family:var(--display);font-size:22px;margin:0}
-.card p{color:var(--mute);font-size:15px}
-.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
-a.btn{font-family:var(--display);font-weight:600;font-size:15px;text-decoration:none;padding:7px 14px;border-radius:7px;border:1.5px solid var(--accent);color:var(--accent)}
-a.btn.primary{background:var(--accent);color:var(--card)}
-a.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-h3{font-family:var(--display);font-size:18px;margin:0 0 6px}
-ul{margin:0;padding-left:18px;color:var(--mute)}
-li{margin:4px 0}
-li a{color:var(--accent)}
-footer{font-size:13px;color:var(--mute);border-top:1px solid var(--rule);padding-top:14px}
-</style>
-</head>
-<body>
-<main>
-<header>
-<p class="eyebrow">ECON 2 · Prof. Ryan Edwards · Fall 2026</p>
-<h1>Midterm <span>Kit</span></h1>
-<p class="lede">A two-sided cheat sheet and a full practice midterm in Edwards' format, built from the F26 slides, every lecture, last year's exam, and both problem sets. Midterm: Thursday, October 8, 60 minutes, 60 points.</p>
-</header>
-<section class="cards">
-<article class="card">
-<h2>Cheat sheet</h2>
-<p>One page, front and back, the size he allows. Every formula, trap, and class example, with the graphs he expects.</p>
-<div class="links"><a class="btn primary" href="cheatsheet.html">Open</a><a class="btn" href="ECON2-cheat-sheet.pdf">Print PDF</a></div>
-</article>
-<article class="card">
-<h2>Practice midterm and drills</h2>
-<p>A 60-point timed practice exam plus drills for every question type, with step-by-step answers and what earns full credit.</p>
-<div class="links"><a class="btn primary" href="worksheet.html">Open</a><a class="btn" href="ECON2-midterm-worksheet.pdf">Print PDF</a></div>
-</article>
-</section>
-<section>
-<h3>More practice</h3>
-<ul>
-<li><a href="https://hellomate2.github.io/econ2-packet/">ECON 2 review packet</a>: units 1 to 11 and the worked F25 midterm (unit 26).</li>
-<li><a href="https://eml.berkeley.edu/~saez/econ2/econ2.html">Saez ECON 2 exams with solutions</a> (Fall 2023 and 2024 midterms cover the same topics).</li>
-</ul>
-</section>
-<footer>Study order: the real F25 midterm cold, then this practice midterm with only your cheat sheet, then Problem Set 2 Q3 from a blank page, then the drills you missed.</footer>
-</main>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECON 2 Midterm Study Site</title><meta name="description" content="ECON 2 midterm study site"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"></head><body>
+<header class="top"><button class="menu-btn" aria-label="Open unit list">Units</button><a class="brand" href="index.html">ECON 2 <span>Midterm</span></a><nav><a href="index.html" class="on">Home</a><a href="flashcards.html" class="">Flashcards</a><a href="worksheet.html" class="">Practice midterm</a><a href="cheatsheet.html" class="">Cheat sheet</a></nav></header>
+<div class="layout" style="grid-template-columns:minmax(0,1fr)"><main class="content"><article style="max-width:1000px">
+<section class="hero"><p class="unit-meta">ECON 2 · Prof. Ryan Edwards · Fall 2026</p><h1>Midterm <span>study site</span></h1>
+<p class="lede">Everything for Thursday's midterm in one place, built from the Fall 2026 slides, all eleven lectures, the Fall 2025 midterm, and both problem sets. Go through the units in order, try every practice question before you reveal the answer, then run the flashcards and the timed practice midterm.</p></section>
+<div class="stats"><div class="stat"><b>Thu Oct 8</b><span>about 9:40 am, Dwinelle 155</span></div><div class="stat"><b>60 min · 60 pts</b><span>short answers and graphs</span></div><div class="stat"><b>1 page</b><span>notes, front and back</span></div></div>
+<div class="progress" aria-hidden="true"><i></i></div><p id="prog-label" style="color:var(--mute);font-size:14px;margin:0">0 units done</p>
+<h2 style="border:0;margin-top:26px">Study path</h2><div class="units"><a class="ucard" href="00-exam.html" data-unit="00-exam"><span class="n">Unit 00</span><h3>How the midterm works</h3><p>Format, grading, what is and is not on it, and how to write full-credit answers.</p></a><a class="ucard" href="01-opportunity-cost.html" data-unit="01-opportunity-cost"><span class="n">Unit 01</span><h3>Opportunity cost and the PPC</h3><p>Class 2. What things really cost, and what the production possibilities curve shows.</p></a><a class="ucard" href="02-comparative-advantage.html" data-unit="02-comparative-advantage"><span class="n">Unit 02</span><h3>Comparative advantage</h3><p>Classes 2 and 3. Bill and Chris, Robinson, Tom and Krisha, and who should make what.</p></a><a class="ucard" href="03-supply-demand.html" data-unit="03-supply-demand"><span class="n">Unit 03</span><h3>Supply and demand</h3><p>Class 4. Shifts versus movements, and how to work a market story question.</p></a><a class="ucard" href="04-surplus-price-controls.html" data-unit="04-surplus-price-controls"><span class="n">Unit 04</span><h3>Surplus and price controls</h3><p>Class 5. Consumer and producer surplus, deadweight loss, ceilings and floors.</p></a><a class="ucard" href="05-elasticity.html" data-unit="05-elasticity"><span class="n">Unit 05</span><h3>Elasticity</h3><p>Classes 6 and 7. How much quantity responds to price, and what it does to spending.</p></a><a class="ucard" href="06-taxes-subsidies.html" data-unit="06-taxes-subsidies"><span class="n">Unit 06</span><h3>Taxes and subsidies</h3><p>Classes 6 and 7. Who really pays a tax, revenue, and deadweight loss.</p></a><a class="ucard" href="07-households.html" data-unit="07-households"><span class="n">Unit 07</span><h3>Households and the Rational Spending Rule</h3><p>Classes 7 and 8. Budget lines and marginal utility per dollar.</p></a><a class="ucard" href="08-firms.html" data-unit="08-firms"><span class="n">Unit 08</span><h3>Competitive firms</h3><p>Classes 8 and 9. Price equals marginal cost, supply curves, and entry.</p></a><a class="ucard" href="09-monopoly.html" data-unit="09-monopoly"><span class="n">Unit 09</span><h3>Monopoly</h3><p>Class 10. Marginal revenue, the two-step method, and deadweight loss.</p></a><a class="ucard" href="10-externalities.html" data-unit="10-externalities"><span class="n">Unit 10</span><h3>Externalities</h3><p>Class 11. Social versus private cost, Pigouvian taxes, and optimal pollution.</p></a></div>
+<h2 style="border:0">Tools</h2>
+<div class="units">
+<a class="ucard" href="flashcards.html"><span class="n">Drill</span><h3>Flashcards</h3><p>Every rule, formula, and class example as a card. Shuffle, flip, and track what you still miss.</p></a>
+<a class="ucard" href="worksheet.html"><span class="n">Test yourself</span><h3>Practice midterm and drills</h3><p>A 60-point timed exam in his format, then drills for every question type, with full answers.</p></a>
+<a class="ucard" href="cheatsheet.html"><span class="n">Print</span><h3>Cheat sheet</h3><p>One page, front and back, the size he allows. Also as a <span style="text-decoration:underline">PDF</span> on the page.</p></a>
+<a class="ucard" href="https://eml.berkeley.edu/~saez/econ2/econ2.html"><span class="n">Extra practice</span><h3>Saez ECON 2 exams</h3><p>Fall 2023 and 2024 midterms with solutions, same topics, different professor.</p></a>
+</div>
+<p style="color:var(--mute);font-size:15px;margin-top:30px">Last-day plan: units 00 and 11 first, then the units you feel weakest on, then the practice midterm timed with only your cheat sheet, then flashcards until every card is green.</p>
+</article></main></div><script src="site.js"></script></body></html>

@@ -1,0 +1,877 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elasticity · ECON 2 Midterm</title><meta name="description" content="Classes 6 and 7. How much quantity responds to price, and what it does to spending."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"></head><body>
+<header class="top"><button class="menu-btn" aria-label="Open unit list">Units</button><a class="brand" href="index.html">ECON 2 <span>Midterm</span></a><nav><a href="index.html" class="">Home</a><a href="flashcards.html" class="">Flashcards</a><a href="worksheet.html" class="">Practice midterm</a><a href="cheatsheet.html" class="">Cheat sheet</a></nav></header>
+<div class="layout"><aside class="side"><h4>Units</h4><a href="00-exam.html" data-unit="00-exam" class=""><span class="num">00</span><span>How the midterm works</span><span class="chk">&#10003;</span></a><a href="01-opportunity-cost.html" data-unit="01-opportunity-cost" class=""><span class="num">01</span><span>Opportunity cost and the PPC</span><span class="chk">&#10003;</span></a><a href="02-comparative-advantage.html" data-unit="02-comparative-advantage" class=""><span class="num">02</span><span>Comparative advantage</span><span class="chk">&#10003;</span></a><a href="03-supply-demand.html" data-unit="03-supply-demand" class=""><span class="num">03</span><span>Supply and demand</span><span class="chk">&#10003;</span></a><a href="04-surplus-price-controls.html" data-unit="04-surplus-price-controls" class=""><span class="num">04</span><span>Surplus and price controls</span><span class="chk">&#10003;</span></a><a href="05-elasticity.html" data-unit="05-elasticity" class="on"><span class="num">05</span><span>Elasticity</span><span class="chk">&#10003;</span></a><a href="06-taxes-subsidies.html" data-unit="06-taxes-subsidies" class=""><span class="num">06</span><span>Taxes and subsidies</span><span class="chk">&#10003;</span></a><a href="07-households.html" data-unit="07-households" class=""><span class="num">07</span><span>Households and the Rational Spending Rule</span><span class="chk">&#10003;</span></a><a href="08-firms.html" data-unit="08-firms" class=""><span class="num">08</span><span>Competitive firms</span><span class="chk">&#10003;</span></a><a href="09-monopoly.html" data-unit="09-monopoly" class=""><span class="num">09</span><span>Monopoly</span><span class="chk">&#10003;</span></a><a href="10-externalities.html" data-unit="10-externalities" class=""><span class="num">10</span><span>Externalities</span><span class="chk">&#10003;</span></a><a href="11-past-exam.html" data-unit="11-past-exam" class=""><span class="num">11</span><span>The Fall 2025 midterm, walked through</span><span class="chk">&#10003;</span></a><h4>Tools</h4><a href="flashcards.html"><span class="num">&#9638;</span><span>Flashcards</span></a><a href="worksheet.html"><span class="num">&#9998;</span><span>Practice midterm</span></a><a href="cheatsheet.html"><span class="num">&#9636;</span><span>Cheat sheet</span></a></aside><main class="content"><article><header class="unit-head">
+  <p class="unit-meta">Classes 6 and 7 · Elasticity</p>
+  <h1>Elasticity</h1>
+  <p class="lede">Elasticity measures how strongly quantity responds when price changes, and it tells you whether a curve should be drawn steep or flat. Of price elasticities, Edwards said in Class 11, "Those are gonna be on there," so expect at least one calculation and at least one question where you must argue for a steep or flat curve.</p>
+</header>
+
+<section id="exam">
+<h2>How it shows up on the exam</h2>
+<p>Elasticity appeared in several forms on the Fall 2025 midterm and the problem sets. Here is what he has asked before.</p>
+<ul>
+<li><strong>Two-point calculation (Fall 2025 midterm, question 1(b), 2 points).</strong> The price of lunch around Berkeley rose from $10 to $11 and quantity demanded fell from 50,000 to 47,500. You had to find the price elasticity of demand and say whether demand is elastic or inelastic. The official answer: price rose 10%, quantity fell 5%, so the elasticity is −5% ÷ 10% = −0.5, relatively inelastic because its size is below 1.</li>
+<li><strong>Shape of a curve from substitutes (Fall 2025 midterm, question 2(a), 2 points).</strong> What is the likely shape of the market demand curve for eggs? The official answer: inelastic, relatively vertical in the short run, because eggs have no obvious one-for-one substitute and willingness to pay for them can be very high.</li>
+<li><strong>Graphs that must match your elasticity story (Fall 2025 midterm, questions 2(e) and 2(g), 4 points each).</strong> You drew the egg market at about $2 a dozen and 10 billion dozen a year with a steep demand curve, then showed an avian flu supply shock. Because demand is steep, the price jumped to about $6 while quantity fell only a little. A flat demand curve here would have lost points even with correct labels.</li>
+<li><strong>Elasticity from a slope (Problem Set 2, question 3(b)).</strong> With demand P = 5 − Q and flat marginal cost of $1, you used ε = (1/slope) × (P/Q). Supply elasticity is infinite because the slope of a flat line is zero. Demand elasticity at the equilibrium (Q = 4, P = 1) is (1/−1) × (1/4) = −0.25, inelastic.</li>
+<li><strong>Spending and elasticity (Class 7 poll).</strong> If the elasticity is −3 and price rises 1%, what happens to total spending? It falls about 2%. He called this kind of question "challenging" and said he could not remember whether he asked it last year. Know it anyway.</li>
+<li><strong>The reverse use (Class 11).</strong> He said the elasticity also tells you the percentage change in price when a supply shock changes quantity, and that "you'll be able to do that." Treat this as a likely question.</li>
+</ul>
+<div class="tip"><p>What earns full credit on a calculation: show both percentage changes (each computed from the starting value), divide quantity by price, state the number, and compare its size to 1 ("−0.5, so |ε| = 0.5 &lt; 1: inelastic"). On a shape question, give the reason (substitutes, necessity, time to adjust) and then the shape (steep or flat). Logs for big percentage changes are not tested.</p></div>
+</section>
+
+<section id="learn">
+<h2>The ideas, explained</h2>
+
+<h3>What elasticity measures</h3>
+<p>The price elasticity of demand answers one question: when the price changes by 1%, by what percent does the quantity demanded change? Edwards insists on this direction. Quantity responds to price, never the other way around. When a student in Class 6 suggested measuring how price responds to quantity, he answered that in economics elasticity is "the responsiveness of the quantity."</p>
+<div class="key"><p><code class="f">ε = %ΔQ ÷ %ΔP</code>, where each percentage change is (new − old) ÷ old. Quantity goes on top, price on the bottom.</p></div>
+<p>To compute a percentage change, take the change and divide by the starting value. If quantity goes from 100 to 80, the change is −20, and −20 ÷ 100 = −20%. His Fall 2025 answer key uses these simple percentage changes from the starting values, not the "midpoint" method some textbooks teach, so use simple percentages.</p>
+<p>Read the number as a multiplier. An elasticity of −3 means a 1% price increase cuts quantity demanded by 3%. In Class 6 he gave this feel for a big elasticity: a 10% change in price that causes a 40% change in quantity demanded means a size of 4, very elastic.</p>
+<p>Why do economists use percentages instead of the slope? Elasticity is "unit free." The slope of a demand curve depends on units (dollars per gallon, dollars per pound), so you cannot compare the slope of tobacco demand with the slope of fish demand. Percent changes have no units, so elasticities can be compared across any two markets.</p>
+
+<h3>The sign: write it both ways</h3>
+<p>Demand slopes down, so price and quantity move in opposite directions and the demand elasticity is negative. The sources disagree on how to report it. The Class 6 slide defines elasticity "in absolute value," so the lunch answer would be 0.5. The Class 7 slides and the Fall 2025 answer key keep the minus sign, so the official lunch answer is −0.5, and the Class 7 slides write the inelastic range as −1 &lt; ε &lt; 0 and the elastic range as ε &lt; −1. Either way, you classify by size (absolute value): ignore the sign and compare the number to 1.</p>
+<div class="tip"><p>Write both so no grader can object: "ε = −0.5, so |ε| = 0.5, which is less than 1: inelastic." When you compare two elasticities, compare sizes. −3 is more elastic than −0.5, even though −3 is the smaller number.</p></div>
+<p>Supply elasticity is positive, because a higher price brings a larger quantity supplied. There is no sign issue for supply.</p>
+
+<h3>The categories</h3>
+<div class="tw"><table class="data">
+<thead><tr><th>Size of ε (ignore the sign)</th><th>Name</th><th>Shape of the curve</th><th>If price rises 1%</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>Perfectly inelastic</td><td>Vertical</td><td>Quantity does not change at all</td></tr>
+<tr><td>Between 0 and 1</td><td>Inelastic</td><td>Steep</td><td>Quantity falls by less than 1%</td></tr>
+<tr><td>Exactly 1</td><td>Unit elastic</td><td>In between</td><td>Quantity falls by exactly 1%</td></tr>
+<tr><td>Above 1</td><td>Elastic</td><td>Flat</td><td>Quantity falls by more than 1%</td></tr>
+<tr><td>Infinite</td><td>Perfectly elastic</td><td>Horizontal</td><td>Quantity drops to zero</td></tr>
+</tbody>
+</table></div>
+
+<h3>Slope and elasticity are related but not the same</h3>
+<p>You can rewrite the definition so it uses the slope of the curve. Since %ΔQ = ΔQ ÷ Q and %ΔP = ΔP ÷ P:</p>
+<div class="key"><p><code class="f">ε = (ΔQ/Q) ÷ (ΔP/P) = (ΔQ/ΔP) × (P/Q) = (1/slope) × (P/Q)</code></p></div>
+<p>Why the reciprocal of the slope? Price is on the vertical axis and quantity on the horizontal axis, so the slope of a demand curve is ΔP ÷ ΔQ (rise over run). Elasticity puts quantity on top, so it uses ΔQ ÷ ΔP, which is one over the slope. This is the formula from Problem Set 2.</p>
+<p>The formula has two parts, and the second part, P/Q, changes as you move along any curve. So a straight demand line, which has the same slope everywhere, does not have the same elasticity everywhere. Take demand P = 12 − Q, whose slope is −1, so 1/slope = −1:</p>
+<div class="tw"><table class="data">
+<thead><tr><th>Point on the line</th><th>Calculation</th><th>ε</th><th>Category</th></tr></thead>
+<tbody>
+<tr><td>Q = 4, P = 8</td><td>−1 × 8/4</td><td>−2</td><td>Elastic</td></tr>
+<tr><td>Q = 6, P = 6</td><td>−1 × 6/6</td><td>−1</td><td>Unit elastic (the midpoint)</td></tr>
+<tr><td>Q = 8, P = 4</td><td>−1 × 4/8</td><td>−0.5</td><td>Inelastic</td></tr>
+</tbody>
+</table></div>
+<figure class="graph"><svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" class="g" font-family="Fira Mono, Fira Sans Condensed, Fira Sans, Arial Narrow, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="420" height="300" fill="#ffffff"/>
+<line x1="105.3" y1="14" x2="105.3" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="164.7" y1="14" x2="164.7" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="224.0" y1="14" x2="224.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="283.3" y1="14" x2="283.3" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.7" y1="14" x2="342.7" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="402.0" y1="14" x2="402.0" y2="260" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="219.0" x2="402" y2="219.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="178.0" x2="402" y2="178.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="137.0" x2="402" y2="137.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="96.0" x2="402" y2="96.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="55.0" x2="402" y2="55.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="402" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="260" x2="402" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="260" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="105.3" y1="260" x2="105.3" y2="264" stroke="#1d2430"/>
+<text x="105.3" y="275" text-anchor="middle" fill="#1d2430">2</text>
+<line x1="164.7" y1="260" x2="164.7" y2="264" stroke="#1d2430"/>
+<text x="164.7" y="275" text-anchor="middle" fill="#1d2430">4</text>
+<line x1="224.0" y1="260" x2="224.0" y2="264" stroke="#1d2430"/>
+<text x="224.0" y="275" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="283.3" y1="260" x2="283.3" y2="264" stroke="#1d2430"/>
+<text x="283.3" y="275" text-anchor="middle" fill="#1d2430">8</text>
+<line x1="342.7" y1="260" x2="342.7" y2="264" stroke="#1d2430"/>
+<text x="342.7" y="275" text-anchor="middle" fill="#1d2430">10</text>
+<line x1="402.0" y1="260" x2="402.0" y2="264" stroke="#1d2430"/>
+<text x="402.0" y="275" text-anchor="middle" fill="#1d2430">12</text>
+<line x1="42" y1="219.0" x2="46" y2="219.0" stroke="#1d2430"/>
+<text x="39" y="223.0" text-anchor="end" fill="#1d2430">2</text>
+<line x1="42" y1="178.0" x2="46" y2="178.0" stroke="#1d2430"/>
+<text x="39" y="182.0" text-anchor="end" fill="#1d2430">4</text>
+<line x1="42" y1="137.0" x2="46" y2="137.0" stroke="#1d2430"/>
+<text x="39" y="141.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="96.0" x2="46" y2="96.0" stroke="#1d2430"/>
+<text x="39" y="100.0" text-anchor="end" fill="#1d2430">8</text>
+<line x1="42" y1="55.0" x2="46" y2="55.0" stroke="#1d2430"/>
+<text x="39" y="59.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430">12</text>
+<text x="224.0" y="294" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="137.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 137.0)">Price ($)</text>
+<polyline points="46.0,14.0 402.0,260.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="310.0" y="250.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D: P = 12 − Q</text>
+<circle cx="164.7" cy="96.0" r="3.4" fill="#1d2430"/>
+<circle cx="224.0" cy="137.0" r="3.4" fill="#1d2430"/>
+<circle cx="283.3" cy="178.0" r="3.4" fill="#1d2430"/>
+<text x="179.5" y="85.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">(4, $8): ε = −1 × 8/4 = −2, elastic</text>
+<text x="238.8" y="126.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">(6, $6): ε = −1, unit elastic</text>
+<text x="298.2" y="167.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">(8, $4): ε = −0.5</text>
+<text x="298.2" y="186.2" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">inelastic</text>
+<text x="63.8" y="214.9" fill="#6b7380" text-anchor="start" font-size="10" font-weight="600">Same slope (−1) everywhere,</text>
+<text x="63.8" y="237.4" fill="#6b7380" text-anchor="start" font-size="10" font-weight="600">but P/Q falls as you move down</text>
+</svg><figcaption>Along the straight demand line P = 12 − Q, the slope never changes, but elasticity falls in size as you move down and to the right: −2 at Q = 4, −1 at the midpoint, −0.5 at Q = 8.</figcaption></figure>
+<p>The pattern to remember: on a straight demand line, demand is more elastic at high prices (upper left, where P/Q is big) and less elastic at low prices (lower right, where P/Q is small). Unit elasticity sits at the midpoint. Edwards got this backwards for a moment in Class 6 and then corrected himself, so trust the formula: at high prices, a $1 change is a small percent of the price but the same quantity change is a big percent of the small quantity, so demand is elastic there.</p>
+
+<h3>Inelastic means steep, elastic means flat</h3>
+<p>Edwards told the class to put this on the cheat sheet in exactly these words: inelastic means steep and elastic means flat. It follows from ε = (1/slope) × (P/Q). A steep curve has a big slope, so one over the slope is small, and the elasticity is small. A flat curve has a slope near zero, so one over the slope is huge. The limit cases make it exact: a horizontal line has slope 0, so ε = 1 ÷ 0, which is infinite; a vertical line has ε = 0.</p>
+<p>The slides call this "a useful, but crude approximation," because P/Q also matters. For drawing exam graphs it is the rule you use.</p>
+<p>Why does the shape matter? Because it decides what a shift of the other curve does. Below, the same supply shift (S1 up to S2) hits two demand curves that pass through the same starting point, (6, $6).</p>
+<figure class="graph"><svg viewBox="0 0 740 294" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="740" height="294" fill="#ffffff"/>
+<text x="200.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Inelastic (steep) demand</text>
+<text x="580.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Elastic (flat) demand</text>
+<g transform="translate(0,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430">9</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="328.3" y="40.4" fill="#b8322a" font-weight="700" text-anchor="start">S1</text>
+<polyline points="46.0,158.0 243.3,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="248.3" y="24.0" fill="#b8322a" font-weight="700" text-anchor="start">S2</text>
+<polyline points="144.7,14.0 243.3,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="155.6" y="27.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D (steep)</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,68.0 169.3,68.0 169.3,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="122.0" r="3.4" fill="#1d2430"/>
+<circle cx="169.3" cy="68.0" r="3.4" fill="#1d2430"/>
+<text x="206.3" y="129.2" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">old (6, $6)</text>
+<text x="159.5" y="57.2" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">new (5, $9)</text>
+<text x="337.1" y="176.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">P up $3 (+50%)</text>
+<text x="337.1" y="195.8" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">Q down 1 (−17%)</text>
+
+</g>
+<g transform="translate(380,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430">7</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="328.3" y="40.4" fill="#b8322a" font-weight="700" text-anchor="start">S1</text>
+<polyline points="46.0,158.0 243.3,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="248.3" y="24.0" fill="#b8322a" font-weight="700" text-anchor="start">S2</text>
+<polyline points="46.0,86.0 342.0,158.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="292.0" y="136.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D (flat)</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,104.0 120.0,104.0 120.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="122.0" r="3.4" fill="#1d2430"/>
+<circle cx="120.0" cy="104.0" r="3.4" fill="#1d2430"/>
+<text x="203.9" y="149.0" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">old (6, $6)</text>
+<text x="120.0" y="93.2" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">new (3, $7)</text>
+<text x="337.1" y="176.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">P up $1 (+17%)</text>
+<text x="337.1" y="195.8" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">Q down 3 (−50%)</text>
+
+</g>
+</svg><figcaption>The same leftward supply shift. With steep (inelastic) demand, price jumps from $6 to $9 and quantity falls only from 6 to 5. With flat (elastic) demand, price rises only to $7 and quantity falls from 6 to 3.</figcaption></figure>
+<p>With inelastic demand, buyers keep buying almost the same amount, so the price has to rise a lot before quantity falls enough to match the smaller supply. With elastic demand, buyers walk away quickly, so a small price rise is enough. The flip side: a supply shift reveals how elastic demand is, and a demand shift reveals how elastic supply is. This is the egg question in reverse. If you see a supply shock produce a huge price jump and a small quantity change, demand must be steep.</p>
+
+<h3>Limit cases</h3>
+<p>Perfectly inelastic demand is a vertical line: buyers want the same quantity at any price, and ε = 0. Perfectly elastic demand is a horizontal line at some price P*: demand is zero if the price is above P*, and buyers would take any amount at P* (the slides write "infinite if P &lt; P*"). The same shapes apply to supply. A vertical supply curve means the quantity is fixed no matter the price (Edwards' examples: Cal football tickets, since the stadium has a fixed number of seats, and visas under a quota). A horizontal supply curve means sellers will supply any amount at one price (his example: soda sold in Berkeley, since Coca-Cola and PepsiCo can sell in nearby cities, so they will not accept a lower price in Berkeley).</p>
+<figure class="graph"><svg viewBox="0 0 740 294" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="740" height="294" fill="#ffffff"/>
+<text x="200.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Vertical demand, supply shifts up</text>
+<text x="580.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Horizontal supply, demand shifts out</text>
+<g transform="translate(0,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430">10</text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="194.0,230.0 194.0,14.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="188.0" y="24.0" fill="#1f5fbf" font-weight="700" text-anchor="end">D (vertical, ε = 0)</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="328.3" y="40.4" fill="#b8322a" font-weight="700" text-anchor="start">S1</text>
+<polyline points="46.0,158.0 243.3,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="248.3" y="24.0" fill="#b8322a" font-weight="700" text-anchor="start">S2</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,50.0 194.0,50.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="122.0" r="3.4" fill="#1d2430"/>
+<circle cx="194.0" cy="50.0" r="3.4" fill="#1d2430"/>
+<text x="337.1" y="176.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">P: $6 to $10</text>
+<text x="337.1" y="195.8" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">Q stays at 6</text>
+
+</g>
+<g transform="translate(380,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430">9</text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,122.0 342.0,122.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="50.0" y="115.0" fill="#b8322a" font-weight="700" text-anchor="start">S (horizontal, ε infinite)</text>
+<polyline points="46.0,14.0 342.0,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="85.6" y="31.6" fill="#1f5fbf" font-weight="700" text-anchor="start">D1</text>
+<polyline points="120.0,14.0 342.0,176.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="155.6" y="35.6" fill="#1f5fbf" font-weight="700" text-anchor="start">D2</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,122.0 268.0,122.0 268.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="194.0" cy="122.0" r="3.4" fill="#1d2430"/>
+<circle cx="268.0" cy="122.0" r="3.4" fill="#1d2430"/>
+<text x="337.1" y="28.4" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">Q: 6 to 9</text>
+<text x="337.1" y="48.2" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">P stays at $6</text>
+
+</g>
+</svg><figcaption>Left: with vertical demand, a supply shift changes only the price ($6 to $10); quantity stays at 6. Right: with horizontal supply, a demand shift changes only the quantity (6 to 9); price stays at $6.</figcaption></figure>
+<p>In class, a poll asked: demand is vertical and supply shifts inward. What happens to quantity? The answer was "absolutely nothing." What happens to price? It rises "a whole lot." He redrew it afterward because, in his words, "I fooled a lot of people there," so practice reading the limit cases off a quick sketch.</p>
+
+<h3>What makes demand elastic or inelastic</h3>
+<p>Demand elasticity comes from how easily buyers can do without the good when its price rises.</p>
+<ul>
+<li><strong>Substitutes.</strong> If there is a close substitute, buyers switch when the price rises, so demand is elastic. If not, demand is inelastic. This was the egg answer: no one-for-one substitute, so steep demand.</li>
+<li><strong>Need.</strong> Goods people need (food, gasoline to get to work, health care) have inelastic demand. Goods people can skip (restaurant meals, since you can stay home and eat ramen) have elastic demand. Numbers he showed from a health economics textbook: all health care about −0.22 ("if you break a leg, you kind of have to get the leg set"), restaurant meals −2.3, fresh tomatoes −4.6.</li>
+<li><strong>Time horizon.</strong> Demand is more elastic in the long run, because buyers have time to find substitutes. Gasoline in the short run is inelastic: you still have to commute, BART is a poor substitute, and you cannot buy an electric vehicle or move overnight. In the long run you can do both, so demand is more elastic.</li>
+<li><strong>Narrow versus broad goods.</strong> A narrowly defined good is more elastic than its whole category, because the rest of the category is a substitute. A tax on cigars alone sends smokers to other tobacco products; a tax on all tobacco has no obvious substitute. One lunch spot raising its prices loses customers to the next spot (Edwards guessed −1.5 or larger in size), while lunch out in general was −0.5 on the Fall 2025 midterm.</li>
+</ul>
+<p>Firms know this. Restaurants face elastic demand, so when food or labor costs rise, Edwards noted, they often shrink portions instead of raising prices.</p>
+
+<h3>The reverse use: from a quantity shock to a price change</h3>
+<p>The formula works in both directions. If you know the elasticity of demand and a supply shock changes the quantity sold by some percent, solve for the price change:</p>
+<div class="key"><p><code class="f">%ΔP = %ΔQ ÷ ε</code>. Example: ε = −0.5 and a supply shock cuts quantity by 10%, so %ΔP = −10% ÷ −0.5 = +20%.</p></div>
+<p>The logic: the supply shock moves the market along the demand curve, so the price must change by whatever amount makes buyers willing to accept the new quantity. The less elastic the demand, the bigger the price change needed. This is the use Edwards described in Class 11 as one of the two "pretty important uses of the elasticity measure."</p>
+
+<h3>Elasticity and total spending</h3>
+<p>Total spending (total expenditure) is price times quantity. When the price rises, two things happen at once: buyers pay more on each unit they still buy, and they buy fewer units. Which effect wins depends on the elasticity.</p>
+<div class="key"><p><code class="f">%Δ(P × Q) ≈ %ΔP + %ΔQ</code> (add the signed percentage changes). If demand is inelastic, a price rise raises spending. If demand is elastic, a price rise lowers spending. If demand is unit elastic, spending does not change.</p></div>
+<p>The Class 7 slides worked this out from a starting price of $100 and quantity of 200 (spending 20,000), with a 1% price increase. The third row is his poll question.</p>
+<div class="tw"><table class="data">
+<thead><tr><th>ε</th><th>%ΔP</th><th>%ΔQ</th><th>%Δ spending ≈ %ΔP + %ΔQ</th><th>Check with P × Q</th></tr></thead>
+<tbody>
+<tr><td>−0.75 (inelastic)</td><td>+1%</td><td>−0.75%</td><td>+0.25%, rises</td><td>101 × 198.5 = 20,049</td></tr>
+<tr><td>−1.5 (elastic)</td><td>+1%</td><td>−1.5%</td><td>−0.5%, falls</td><td>101 × 197 = 19,897</td></tr>
+<tr><td>−3 (elastic, poll)</td><td>+1%</td><td>−3%</td><td>−2%, falls</td><td>101 × 194 = 19,594</td></tr>
+</tbody>
+</table></div>
+<p>Edwards called 1 "this magical number": a 1% price increase brings an exactly offsetting 1% drop in quantity, so "P times Q doesn't change at all."</p>
+<p>On a graph, spending is the rectangle with height P and width Q. When supply shifts back and price rises, you gain a rectangle on top (the higher price on the units still bought) and lose a strip on the side (the units no longer bought, at the old price).</p>
+<figure class="graph"><svg viewBox="0 0 740 294" xmlns="http://www.w3.org/2000/svg" font-family="Fira Sans, Arial, sans-serif" font-size="11">
+<rect x="0" y="0" width="740" height="294" fill="#ffffff"/>
+<text x="200.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Inelastic demand: spending rises</text>
+<text x="580.0" y="16" text-anchor="middle" font-weight="700" font-size="13" fill="#1d2430">Elastic demand: spending falls</text>
+<g transform="translate(0,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,230.0 169.3,230.0 169.3,122.0 46.0,122.0" fill="#9aa3ad" fill-opacity="0.25" stroke="none"/>
+<polygon points="46.0,122.0 169.3,122.0 169.3,68.0 46.0,68.0" fill="#2a9d8f" fill-opacity="0.45" stroke="none"/>
+<polygon points="169.3,230.0 194.0,230.0 194.0,122.0 169.3,122.0" fill="#d1495b" fill-opacity="0.45" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430">5</text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430">9</text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="328.3" y="40.4" fill="#b8322a" font-weight="700" text-anchor="start">S1</text>
+<polyline points="46.0,158.0 243.3,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="248.3" y="24.0" fill="#b8322a" font-weight="700" text-anchor="start">S2</text>
+<polyline points="144.7,14.0 243.3,230.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="155.6" y="27.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D (steep)</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,68.0 169.3,68.0 169.3,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="107.7" y="100.4" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">gained 15</text>
+<text x="107.7" y="179.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">kept 30</text>
+<text x="201.4" y="204.8" fill="#1d2430" text-anchor="start" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">◄ lost 6</text>
+<text x="337.1" y="165.2" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">before 6 × 6 = 36</text>
+<text x="337.1" y="185.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">after 9 × 5 = 45</text>
+<text x="337.1" y="219.2" fill="#2a9d8f" text-anchor="end" font-size="10" font-weight="700">spending rises</text>
+
+</g>
+<g transform="translate(380,24)">
+<rect x="0" y="0" width="360" height="270" fill="#ffffff"/>
+<line x1="70.7" y1="14" x2="70.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="95.3" y1="14" x2="95.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="120.0" y1="14" x2="120.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="144.7" y1="14" x2="144.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="169.3" y1="14" x2="169.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="194.0" y1="14" x2="194.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="218.7" y1="14" x2="218.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="243.3" y1="14" x2="243.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="268.0" y1="14" x2="268.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="292.7" y1="14" x2="292.7" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="317.3" y1="14" x2="317.3" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="342.0" y1="14" x2="342.0" y2="230" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="212.0" x2="342" y2="212.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="194.0" x2="342" y2="194.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="176.0" x2="342" y2="176.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="158.0" x2="342" y2="158.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="140.0" x2="342" y2="140.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="122.0" x2="342" y2="122.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="104.0" x2="342" y2="104.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="86.0" x2="342" y2="86.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="68.0" x2="342" y2="68.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="50.0" x2="342" y2="50.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="32.0" x2="342" y2="32.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<line x1="46" y1="14.0" x2="342" y2="14.0" stroke="#e3e6ea" stroke-width="0.7"/>
+<polygon points="46.0,230.0 120.0,230.0 120.0,122.0 46.0,122.0" fill="#9aa3ad" fill-opacity="0.25" stroke="none"/>
+<polygon points="46.0,122.0 120.0,122.0 120.0,104.0 46.0,104.0" fill="#2a9d8f" fill-opacity="0.45" stroke="none"/>
+<polygon points="120.0,230.0 194.0,230.0 194.0,122.0 120.0,122.0" fill="#d1495b" fill-opacity="0.45" stroke="none"/>
+<line x1="46" y1="230" x2="342" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="46" y1="14" x2="46" y2="230" stroke="#1d2430" stroke-width="1.4"/>
+<line x1="70.7" y1="230" x2="70.7" y2="234" stroke="#1d2430"/>
+<text x="70.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="95.3" y1="230" x2="95.3" y2="234" stroke="#1d2430"/>
+<text x="95.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="120.0" y1="230" x2="120.0" y2="234" stroke="#1d2430"/>
+<text x="120.0" y="245" text-anchor="middle" fill="#1d2430">3</text>
+<line x1="144.7" y1="230" x2="144.7" y2="234" stroke="#1d2430"/>
+<text x="144.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="169.3" y1="230" x2="169.3" y2="234" stroke="#1d2430"/>
+<text x="169.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="194.0" y1="230" x2="194.0" y2="234" stroke="#1d2430"/>
+<text x="194.0" y="245" text-anchor="middle" fill="#1d2430">6</text>
+<line x1="218.7" y1="230" x2="218.7" y2="234" stroke="#1d2430"/>
+<text x="218.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="243.3" y1="230" x2="243.3" y2="234" stroke="#1d2430"/>
+<text x="243.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="268.0" y1="230" x2="268.0" y2="234" stroke="#1d2430"/>
+<text x="268.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="292.7" y1="230" x2="292.7" y2="234" stroke="#1d2430"/>
+<text x="292.7" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="317.3" y1="230" x2="317.3" y2="234" stroke="#1d2430"/>
+<text x="317.3" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="342.0" y1="230" x2="342.0" y2="234" stroke="#1d2430"/>
+<text x="342.0" y="245" text-anchor="middle" fill="#1d2430"></text>
+<line x1="42" y1="212.0" x2="46" y2="212.0" stroke="#1d2430"/>
+<text x="39" y="216.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="194.0" x2="46" y2="194.0" stroke="#1d2430"/>
+<text x="39" y="198.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="176.0" x2="46" y2="176.0" stroke="#1d2430"/>
+<text x="39" y="180.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="158.0" x2="46" y2="158.0" stroke="#1d2430"/>
+<text x="39" y="162.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="140.0" x2="46" y2="140.0" stroke="#1d2430"/>
+<text x="39" y="144.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="122.0" x2="46" y2="122.0" stroke="#1d2430"/>
+<text x="39" y="126.0" text-anchor="end" fill="#1d2430">6</text>
+<line x1="42" y1="104.0" x2="46" y2="104.0" stroke="#1d2430"/>
+<text x="39" y="108.0" text-anchor="end" fill="#1d2430">7</text>
+<line x1="42" y1="86.0" x2="46" y2="86.0" stroke="#1d2430"/>
+<text x="39" y="90.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="68.0" x2="46" y2="68.0" stroke="#1d2430"/>
+<text x="39" y="72.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="50.0" x2="46" y2="50.0" stroke="#1d2430"/>
+<text x="39" y="54.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="32.0" x2="46" y2="32.0" stroke="#1d2430"/>
+<text x="39" y="36.0" text-anchor="end" fill="#1d2430"></text>
+<line x1="42" y1="14.0" x2="46" y2="14.0" stroke="#1d2430"/>
+<text x="39" y="18.0" text-anchor="end" fill="#1d2430"></text>
+<text x="194.0" y="264" text-anchor="middle" fill="#1d2430" font-weight="600">Quantity</text>
+<text x="12" y="122.0" text-anchor="middle" fill="#1d2430" font-weight="600" transform="rotate(-90 12 122.0)">Price ($)</text>
+<polyline points="46.0,230.0 342.0,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="328.3" y="40.4" fill="#b8322a" font-weight="700" text-anchor="start">S1</text>
+<polyline points="46.0,158.0 243.3,14.0" fill="none" stroke="#b8322a" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="248.3" y="24.0" fill="#b8322a" font-weight="700" text-anchor="start">S2</text>
+<polyline points="46.0,86.0 342.0,158.0" fill="none" stroke="#1f5fbf" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="292.0" y="136.0" fill="#1f5fbf" font-weight="700" text-anchor="start">D (flat)</text>
+<polyline points="46,122.0 194.0,122.0 194.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="46,104.0 120.0,104.0 120.0,230" fill="none" stroke="#6b7380" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="83.0" y="116.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">gained 3</text>
+<text x="83.0" y="179.6" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">kept 18</text>
+<text x="157.0" y="194.0" fill="#1d2430" text-anchor="middle" font-size="10" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">lost 18</text>
+<text x="337.1" y="165.2" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">before 6 × 6 = 36</text>
+<text x="337.1" y="185.0" fill="#1d2430" text-anchor="end" font-size="10" font-weight="600">after 7 × 3 = 21</text>
+<text x="337.1" y="219.2" fill="#d1495b" text-anchor="end" font-size="10" font-weight="700">spending falls</text>
+
+</g>
+</svg><figcaption>Same supply shift as above. With steep demand, the green gain (15) beats the red loss (6), so spending rises from 36 to 45. With flat demand, the gain (3) is far smaller than the loss (18), so spending falls from 36 to 21.</figcaption></figure>
+<p>The shortcut only works for small changes. For big changes like the ones in this graph (a 50% price rise), multiply P × Q before and after instead. The slides use logs to make big changes add up, but Edwards said in Class 7 that you do not need logs "for the final exam or the midterm."</p>
+<p>Two applications from the slides. First, an illicit drug crackdown that raises the price would increase total spending on the drug if demand is inelastic. Second, "at sufficiently high prices, demand always becomes elastic (because budget is finite)," which matches the straight-line pattern: high on the demand curve, demand is elastic. The same logic runs in reverse: when the Strait of Hormuz reopens and gasoline supply shifts out, inelastic demand means price falls a lot, quantity rises a little, and total gas spending falls.</p>
+
+<h3>The Brown University trap</h3>
+<p>In Class 7, Edwards criticized a Wall Street Journal story ("Americans Have Spent $100 Billion More on Fuel") built on a Brown University projection. The projection multiplied the price increase by the quantity people bought before the increase. That assumes quantity demanded stays exactly the same, which is only true if demand is perfectly inelastic (vertical). In reality people respond: they drive less or take BART. So "price rise times old quantity" overstates the extra spending. His summary: "Prices change and then quantities change. That's the thing." Even with gas, where demand is inelastic, quantity still falls somewhat.</p>
+
+<h3>Price elasticity of supply</h3>
+<div class="key"><p><code class="f">ε<sub>S</sub> = %ΔQ<sub>S</sub> ÷ %ΔP</code>. It is positive. Elastic if above 1, inelastic if below 1, 0 for a vertical supply curve, infinite for a horizontal one. Steep supply is inelastic and flat supply is elastic, just as with demand.</p></div>
+<p>Supply elasticity comes from how easily sellers can change how much they produce.</p>
+<ul>
+<li><strong>Short run: usually inelastic.</strong> Sellers face resource constraints. Oil takes time to explore and drill. Farmers can only harvest crops already in the ground. A local brewery plans its brews in advance. So producing more quickly means sharply rising marginal cost, and the supply curve is steep.</li>
+<li><strong>Long run: usually more elastic.</strong> With time, sellers can build capacity, enter the market, or adopt new technology. His example: oil supply became more elastic in the long run through fracking.</li>
+<li><strong>Sellers who can sell elsewhere: very elastic.</strong> Soda sold in Berkeley and gasoline sold at the world oil price have nearly flat supply, because sellers will not accept a lower price from one city or country when they can sell to someone else.</li>
+</ul>
+<p>Supply elasticity is revealed by a demand shift. If demand shifts out and supply is very elastic, quantity rises a lot and price barely moves. If supply is very inelastic (Cal football seats), price rises a lot and quantity barely moves. These shapes are also what decides who bears a tax: the more inelastic side of the market bears more of it. The taxes unit builds on this.</p>
+</section>
+
+<section id="examples">
+<h2>Worked examples</h2>
+
+<div class="example"><h4>Example: lunches around Berkeley (Fall 2025 midterm, question 1(b))</h4>
+<p>The price of lunch rises from $10 to $11, and quantity demanded falls from 50,000 to 47,500. Find the price elasticity of demand. Is demand elastic or inelastic?</p>
+<ol class="steps">
+<li>Percentage change in price, from the starting value: (11 − 10) ÷ 10 = +10%.</li>
+<li>Percentage change in quantity, from the starting value: (47,500 − 50,000) ÷ 50,000 = −2,500 ÷ 50,000 = −5%.</li>
+<li>Divide quantity by price: ε = −5% ÷ 10% = −0.5.</li>
+<li>Compare the size to 1: |ε| = 0.5 &lt; 1, so demand is inelastic.</li>
+<li>Bonus check on spending: $10 × 50,000 = $500,000 before and $11 × 47,500 = $522,500 after. Spending rose, as it should with inelastic demand (the shortcut gives 10% − 5% = about +5%).</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> ε = −0.5 (0.5 in absolute value), relatively inelastic because its size is less than 1.</p>
+</div>
+
+<div class="example"><h4>Example: elasticity at points on P = 12 − Q</h4>
+<p>Use ε = (1/slope) × (P/Q) to find the elasticity at Q = 4 and Q = 8. Where is demand unit elastic?</p>
+<ol class="steps">
+<li>The slope of P = 12 − Q is −1, so 1/slope = −1.</li>
+<li>At Q = 4, the price is 12 − 4 = 8. So ε = −1 × (8/4) = −2. Elastic.</li>
+<li>At Q = 8, the price is 12 − 8 = 4. So ε = −1 × (4/8) = −0.5. Inelastic.</li>
+<li>Unit elastic needs (1/slope) × (P/Q) = −1, so P/Q = 1, meaning P = Q. With P = 12 − Q, that gives Q = 6 and P = 6, the midpoint of the line.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> −2 at Q = 4, −0.5 at Q = 8, unit elastic at Q = 6. Same slope, different elasticities, because P/Q changes along the line.</p>
+</div>
+
+<div class="example"><h4>Example: the spending poll (Class 7)</h4>
+<p>The elasticity of demand is −3 and the price rises 1%. What happens to total spending?</p>
+<ol class="steps">
+<li>Quantity response: %ΔQ = ε × %ΔP = −3 × 1% = −3%.</li>
+<li>Spending: %Δ(P × Q) ≈ %ΔP + %ΔQ = 1% + (−3%) = −2%.</li>
+<li>Reason: demand is elastic (size 3 is above 1), so the percentage drop in quantity is bigger than the percentage rise in price.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> Quantity demanded falls 3%, and total spending falls by about 2%.</p>
+</div>
+
+<div class="example"><h4>Example: gasoline from $3 to $4 (Class 7)</h4>
+<p>Gas rises from $3 to $4 a gallon. A typical driver buys 50 gallons a month, and the elasticity of gasoline demand is −0.37 (the newer Dallas Fed estimate; older studies said −0.04). Using simple percentage changes, how much does the driver buy now, and what happens to monthly spending?</p>
+<ol class="steps">
+<li>%ΔP = (4 − 3) ÷ 3 = +33.3% (an increase of a third).</li>
+<li>%ΔQ = ε × %ΔP = −0.37 × 33.3% = about −12.3%.</li>
+<li>New quantity: 50 × (1 − 0.123) = about 43.8, so about 44 gallons a month.</li>
+<li>This is a big change, so compute spending directly instead of using the shortcut: before, $3 × 50 = $150; after, $4 × 43.8 = about $175.</li>
+<li>Spending rises because demand is inelastic (0.37 &lt; 1), but drivers still cut back about 6 gallons. Quantity responds even here.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> About 44 gallons a month, and spending rises from $150 to about $175. (The slides use logs and get 45 gallons and $179.81; logs are not tested, so the simple-percent answer is the one to give.)</p>
+</div>
+
+<div class="example"><h4>Example: the reverse use (Class 11)</h4>
+<p>The price elasticity of demand is −0.5. A supply shock cuts the quantity sold by 10%. By about how much does the price rise, and what happens to spending?</p>
+<ol class="steps">
+<li>Start from ε = %ΔQ ÷ %ΔP and solve for the price change: %ΔP = %ΔQ ÷ ε.</li>
+<li>%ΔP = −10% ÷ −0.5 = +20%.</li>
+<li>Spending: %ΔP + %ΔQ = 20% − 10% = about +10%. It rises, because demand is inelastic.</li>
+</ol>
+<p class="answer"><strong>Answer:</strong> The price rises about 20%, and spending rises (about 10% by the shortcut; this is a fairly big change, so 1.2 × 0.9 = 1.08 gives the exact +8%).</p>
+</div>
+</section>
+
+<section id="mistakes">
+<h2>Common mistakes</h2>
+<div class="mistake"><p><strong>Mistake:</strong> Dividing the price change by the quantity change (−10% ÷ −5% = 2 for the lunch problem).</p><p><strong>Correct:</strong> Quantity goes on top: ε = %ΔQ ÷ %ΔP. Elasticity is how quantity responds to price, so the lunch answer is −5% ÷ 10% = −0.5.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Treating the slope as the elasticity, or saying a straight demand line has the same elasticity everywhere.</p><p><strong>Correct:</strong> ε = (1/slope) × (P/Q). The slope is constant on a straight line, but P/Q is not, so demand is more elastic at the top of the line and less elastic at the bottom.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Computing extra spending as the price increase times the old quantity (the Brown University projection).</p><p><strong>Correct:</strong> When the price rises, quantity demanded falls, so this overstates the extra spending. It is only right if demand is perfectly inelastic. Use the new quantity, or add the percentage changes.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Calling −3 "less elastic" than −0.5 because −3 is the smaller number.</p><p><strong>Correct:</strong> Judge elasticity by size. |−3| = 3 is above 1 (elastic) and |−0.5| = 0.5 is below 1 (inelastic), so −3 is far more elastic.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Using %ΔP + %ΔQ for a big change, such as a 33% or 100% price jump.</p><p><strong>Correct:</strong> The shortcut is only accurate for small changes. For big ones, multiply price times quantity before and after and compare.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Drawing steep demand for a good with many close substitutes, or flat demand for a necessity.</p><p><strong>Correct:</strong> Inelastic means steep and elastic means flat. No close substitute, a necessity, or a short time to adjust gives steep demand. Close substitutes, a narrow good, or a long time to adjust gives flat demand.</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Computing percentage changes from the new value or from the midpoint.</p><p><strong>Correct:</strong> His answer key divides each change by the starting value: from $10 to $11 is +10%, not +9.5% (midpoint) or +9.1% (new value).</p></div>
+<div class="mistake"><p><strong>Mistake:</strong> Assuming supply responds just as much in the short run as in the long run.</p><p><strong>Correct:</strong> Supply is usually inelastic (steep) in the short run because of resource constraints like crops already planted or wells not yet drilled, and more elastic (flatter) in the long run when sellers can expand and enter.</p></div>
+</section>
+
+<section id="said">
+<h2>What Edwards said in class</h2>
+<blockquote class="said"><p>"On your cheat sheet, for example, for the exam, put, you know, inelastic means steep and elastic means flat."</p><cite>Class 6</cite><p class="why">Why it matters: he told you exactly what to write, and every shape question on the exam depends on this link.</p></blockquote>
+<blockquote class="said"><p>"In economics, you know, we typically think of elasticity as being the responsiveness of the quantity."</p><cite>Class 6</cite><p class="why">Why it matters: always put quantity on top and phrase answers as "quantity responds to price."</p></blockquote>
+<blockquote class="said"><p>The Brown projection assumed "that the quantity demanded is exactly the same ... that can't help but be totally wrong except in these very limited cases." Then: "Prices change and then quantities change. That's the thing."</p><cite>Class 7</cite><p class="why">Why it matters: if a question gives you a price change and an old quantity, he wants you to say quantity will fall too.</p></blockquote>
+<blockquote class="said"><p>"1 is this magical number ... P times Q doesn't change at all."</p><cite>Class 7</cite><p class="why">Why it matters: elasticity of size 1 is the dividing line for what happens to total spending.</p></blockquote>
+<blockquote class="said"><p>On using logs for large percentage changes: "You don't need to know that for the final exam or the midterm or any of those things."</p><cite>Class 7</cite><p class="why">Why it matters: use simple percentage changes from the starting value and multiply P × Q directly for big changes.</p></blockquote>
+<blockquote class="said"><p>"Price elasticities, the percentage changes in the quantity per percentage change in the price, that'll be something on the midterm too."</p><cite>Class 11</cite><p class="why">Why it matters: this is as close to a guarantee as he gives.</p></blockquote>
+<blockquote class="said"><p>"The elasticity of a demand curve will also tell you something about the percentage change in the market price if a percentage change in quantity were to happen."</p><cite>Class 11</cite><p class="why">Why it matters: be ready for the reverse use, %ΔP = %ΔQ ÷ ε.</p></blockquote>
+<blockquote class="said"><p>"What's the shape of the demand curve? Is it flat, is it steep? That kind of thing is really important."</p><cite>Class 11</cite><p class="why">Why it matters: graph questions are graded on whether your slopes match your elasticity story, not just on labels.</p></blockquote>
+</section>
+
+<section id="practice">
+<h2>Practice questions</h2><div class="tools"><button class="btn" id="reveal-all">Show all answers</button></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> A movie theater near campus raises ticket prices from $12 to $15, and weekly tickets sold fall from 1,000 to 600. Using simple percentage changes from the starting values, what is the price elasticity of demand? Is demand elastic or inelastic? Does the theater's revenue rise or fall?</p><details><summary>Show answer</summary><div class="a"><p>%ΔP = (15 − 12) ÷ 12 = +25%. %ΔQ = (600 − 1,000) ÷ 1,000 = −40%. ε = −40% ÷ 25% = −1.6, so |ε| = 1.6 &gt; 1: elastic. Revenue falls, from $12 × 1,000 = $12,000 to $15 × 600 = $9,000. With elastic demand, the percentage drop in quantity is bigger than the percentage rise in price, so a price increase lowers spending.</p><p class="credit"><strong>Full credit:</strong> −1.6 (or 1.6 in absolute value) with both percentages shown, elastic, revenue falls.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Demand is P = 20 − 2Q. Using ε = (1/slope) × (P/Q), find the elasticity at Q = 4 and at Q = 8. At what quantity is demand unit elastic?</p><details><summary>Show answer</summary><div class="a"><p>The slope is −2, so 1/slope = −0.5. At Q = 4, P = 12, so ε = −0.5 × 12/4 = −1.5 (elastic). At Q = 8, P = 4, so ε = −0.5 × 4/8 = −0.25 (inelastic). Unit elastic where −0.5 × P/Q = −1, so P = 2Q. Then 20 − 2Q = 2Q gives Q = 5 and P = 10, the midpoint of the line.</p><p class="credit"><strong>Full credit:</strong> −1.5 and −0.25 with the formula shown, and Q = 5 (P = 10) for unit elasticity.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> The price elasticity of demand for eggs is about −0.25. Avian flu cuts the quantity of eggs sold by 5%. By about how much does the price of eggs rise? Does total spending on eggs rise or fall? Show your work.</p><details><summary>Show answer</summary><div class="a"><p>%ΔP = %ΔQ ÷ ε = −5% ÷ −0.25 = +20%. Spending changes by about %ΔP + %ΔQ = 20% − 5% = +15%, so it rises. Demand is inelastic (0.25 &lt; 1), so it takes a large price rise to get buyers to cut back by 5%, and the higher price more than makes up for the lost units.</p><p class="credit"><strong>Full credit:</strong> about +20% with the division shown, and spending rises because demand is inelastic.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Suppose a news story says gas prices rose $1 a gallon, Americans buy 10 billion gallons a month, so Americans are spending $10 billion more each month on gas. Briefly explain what is wrong with this reasoning. When would it be right?</p><details><summary>Show answer</summary><div class="a"><p>It assumes quantity demanded stays at 10 billion gallons after the price rise. But quantity responds to price: people drive less, carpool, or take transit, so they buy fewer gallons and the extra spending is less than $10 billion. The calculation is only right if demand is perfectly inelastic (vertical, ε = 0). This is the mistake Edwards pointed out in the Brown University fuel projection.</p><p class="credit"><strong>Full credit:</strong> says quantity demanded falls when price rises so the estimate is too high, and that it holds only with perfectly inelastic demand.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> For each pair, which demand is more elastic? Briefly explain. (a) Burritos from one particular taqueria on Telegraph, or food in general. (b) Gasoline over the next month, or gasoline over the next five years.</p><details><summary>Show answer</summary><div class="a"><p>(a) The one taqueria. It is a narrow good with many close substitutes (the next burrito place down the street), so its customers switch when it raises prices. Food in general has no substitute and is a necessity, so demand is inelastic. (b) Gasoline over five years. In the short run you still have to commute and cannot change your car or where you live. Over five years you can buy an electric vehicle, move closer to work, or change how you commute, so demand is more elastic.</p><p class="credit"><strong>Full credit:</strong> the taqueria (substitutes, narrow good) and the long run (time to adjust), each with a reason.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Gas rises from $3 to $4 a gallon. A driver buys 50 gallons a month, and the price elasticity of demand is −0.37. Using simple percentage changes, about how many gallons does the driver buy after the increase? Does monthly spending rise or fall?</p><details><summary>Show answer</summary><div class="a"><p>%ΔP = 1 ÷ 3 = +33%. %ΔQ = −0.37 × 33% = about −12%. New quantity: 50 × 0.88 = about 44 gallons. Spending goes from $3 × 50 = $150 to about $4 × 44 = $175 (about $176 with 44 exactly), so it rises. Demand is inelastic, so spending goes up, but the driver still cuts back.</p><p class="credit"><strong>Full credit:</strong> about 44 gallons and spending rises to roughly $175, with the percentages shown. (An answer near 45 gallons and $180 from the slides' log method is also correct.)</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">4 points</span> Insulin has no close substitute, and people with diabetes need it. Describe the demand curve for insulin. Then a factory shutdown shifts the supply of insulin to the left. Describe (or sketch) what happens to the price, the quantity, and total spending on insulin. Briefly explain.</p><details><summary>Show answer</summary><div class="a"><p>Demand is very inelastic, so draw it steep (close to vertical): there is no substitute and it is a medical necessity, so buyers' willingness to pay is very high. When supply shifts left, the new equilibrium moves up the steep demand curve: price rises a lot and quantity falls only a little (like the left panel of the steep-versus-flat graph above). Total spending rises, because the percentage rise in price is much bigger than the percentage fall in quantity. On a graph, the rectangle gained on top is bigger than the strip lost on the side.</p><p class="credit"><strong>Full credit:</strong> steep demand with the reason (no substitute, necessity), price up a lot and quantity down a little, spending rises because demand is inelastic.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> Cal has a great season and demand for football tickets rises sharply. Memorial Stadium has a fixed number of seats. What happens to ticket prices and the number of tickets sold this season? What is the elasticity of supply? Would your answer change if Cal could expand the stadium over ten years?</p><details><summary>Show answer</summary><div class="a"><p>The supply of seats is fixed this season, so supply is vertical and its elasticity is 0. The demand shift raises the price and leaves the quantity unchanged. Over ten years Cal could add seats, so long-run supply is more elastic (flatter): the same demand increase would raise quantity more and price less.</p><p class="credit"><strong>Full credit:</strong> price up, quantity unchanged, ε<sub>S</sub> = 0, and long-run supply more elastic.</p></div></details></div>
+
+<div class="practice"><p class="q"><span class="pts">2 points</span> The price of strawberries rises 20%. Over the next month, quantity supplied rises only 2%. What is the price elasticity of supply? Is supply elastic or inelastic? Why would it be larger over several years?</p><details><summary>Show answer</summary><div class="a"><p>ε<sub>S</sub> = 2% ÷ 20% = 0.1, which is below 1, so supply is inelastic (steep). In the short run farmers can only harvest the plants already in the ground, so producing more means sharply rising marginal cost. Over several years they can plant more acres and new growers can enter, so supply becomes more elastic.</p><p class="credit"><strong>Full credit:</strong> 0.1, inelastic, and the short-run resource constraint (crops already planted) as the reason.</p></div></details></div>
+</section>
+
+<section id="summary">
+<h2>One-minute review</h2>
+<ul>
+<li>ε = %ΔQ ÷ %ΔP, with each percent change computed from the starting value. Quantity responds to price.</li>
+<li>Lunches $10 to $11, 50,000 to 47,500: ε = −5% ÷ 10% = −0.5. Write "−0.5, so |ε| = 0.5 &lt; 1: inelastic."</li>
+<li>Elastic if the size is above 1, inelastic if below 1, unit elastic at 1. Vertical is 0, horizontal is infinite.</li>
+<li>Inelastic means steep and elastic means flat. Steep demand: a supply shift moves price a lot and quantity a little.</li>
+<li>ε = (1/slope) × (P/Q). On a straight line, demand is more elastic at higher prices. P = 12 − Q: −2 at Q = 4, −1 at Q = 6, −0.5 at Q = 8.</li>
+<li>Inelastic when there is no close substitute, the good is a need, or time is short. Elastic with substitutes, a narrow good, or a long horizon.</li>
+<li>Reverse use: %ΔP = %ΔQ ÷ ε. With ε = −0.5, a 10% quantity cut raises price 20%.</li>
+<li>%Δ spending ≈ %ΔP + %ΔQ. Price up 1%: ε = −0.75 gives +0.25%, −1.5 gives −0.5%, −3 gives −2%. For big changes, multiply P × Q directly.</li>
+<li>Gas $3 to $4 with ε = −0.37: about 44 gallons instead of 50, spending $150 to about $175. Never use the old quantity (the Brown trap).</li>
+<li>Supply elasticity is positive, inelastic in the short run (crops planted, wells not drilled) and more elastic in the long run.</li>
+</ul>
+</section>
+<div class="donebar"><button class="btn primary" id="mark-done" data-u="05-elasticity">Mark this unit as done</button><span style="color:var(--mute);font-size:15px">Progress is saved in this browser.</span></div><nav class="pager"><a href="04-surplus-price-controls.html"><small>Previous</small>Surplus and price controls</a><a href="06-taxes-subsidies.html" style="text-align:right"><small>Next</small>Taxes and subsidies</a></nav></article></main><aside class="toc"><h4>On this page</h4><a href="#exam">How it shows up on the exam</a><a href="#learn">The ideas, explained</a><a href="#examples">Worked examples</a><a href="#mistakes">Common mistakes</a><a href="#said">What Edwards said in class</a><a href="#practice">Practice questions</a><a href="#summary">One-minute review</a></aside></div><script src="site.js"></script></body></html>
